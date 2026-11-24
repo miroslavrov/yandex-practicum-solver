@@ -1,0 +1,4 @@
+practicum_cookies.txt
+practicum_state.json
+*.har
+__pycache__/

@@ -1,0 +1,356 @@
+[
+ {
+  "lesson": "Цикл while в Kotlin",
+  "lid": "2a0d9fae-7df2-417f-8ad2-e984b6a7187f",
+  "kind": "task",
+  "task_id": "f9c74e04-4227-4c50-b94a-9651ac79c966"
+ },
+ {
+  "lesson": "Массивы в Kotlin",
+  "lid": "c7b106ae-311c-4ddf-b876-73b559b0a03e",
+  "kind": "task",
+  "task_id": "4d7f0258-47b3-4bb4-abef-298117b7c01b"
+ },
+ {
+  "lesson": "Коллекции в Kotlin",
+  "lid": "bec86100-ed8e-4704-a7fe-b371952122b3",
+  "kind": "task",
+  "task_id": "f171a4b6-456d-4e66-b2a3-bc793758ef56"
+ },
+ {
+  "lesson": "Коллекции в Kotlin",
+  "lid": "bec86100-ed8e-4704-a7fe-b371952122b3",
+  "kind": "task",
+  "task_id": "36ba7d78-c65c-4cd3-88e8-b1d9e9074679"
+ },
+ {
+  "lesson": "Коллекции в Kotlin. Функции",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "kind": "quiz_coding",
+  "block_id": "470a3b5d-0338-4eb3-b359-27c049d1e996",
+  "content": {
+   "id": "750f645e-5b98-469c-81f4-123263622a27",
+   "hint": "",
+   "panes": [
+    {
+     "id": "1fc8a805-e14e-4d4f-a1b7-0ef863a9bc5f",
+     "name": "Practicum.kt",
+     "content": "fun main(){\n    val fruits = listOf(\"яблоко\", \"банан\", \"апельсин\")\n    \n    println(fruits.sorted()) // по алфавиту по возрастанию\n    println(fruits.sortedDescending())  // по алфавиту по убыванию\n    println(fruits.sortedBy { fruit -> fruit.length }) // по длине строки\n    println(fruits.sortedByDescending { fruit -> fruit.length }) // по длине строки по убыванию\n}\n",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "lesson": "Коллекции в Kotlin. Функции",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "kind": "quiz_coding",
+  "block_id": "ca6b31ba-cf53-4751-8b39-8612ca118171",
+  "content": {
+   "id": "3020d37c-564f-4b36-aed9-09c498f9ba47",
+   "hint": "",
+   "panes": [
+    {
+     "id": "3301a7d8-051b-461f-b0e4-e2db2b860e56",
+     "name": "Practicum.kt",
+     "content": "fun main(){\n    val fruits = mutableListOf(\"яблоко\", \"банан\", \"апельсин\")\n    \n    fruits.sort()\n    println(fruits)\n    fruits.sortBy { fruit -> fruit.length }\n    println(fruits)\n}\n",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "lesson": "Коллекции в Kotlin. Функции",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "kind": "task",
+  "task_id": "c81b3ca2-bffe-47f9-956e-f970ff7f26ef"
+ },
+ {
+  "lesson": "Коллекции в Kotlin. Функции",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "kind": "task",
+  "task_id": "3e455486-53ff-4bab-afb2-d0de9630ee41"
+ },
+ {
+  "lesson": "Классы enum",
+  "lid": "32322e57-8457-4daa-9e44-6b96e54e4577",
+  "kind": "quiz_coding",
+  "block_id": "1baad2a9-e245-40d7-9fe6-3b3a8638085e",
+  "content": {
+   "id": "1fe30ece-58fa-4bed-aac0-965d0d30a409",
+   "hint": "",
+   "panes": [
+    {
+     "id": "16386dad-28b7-4674-a07b-19dd4a8b57a4",
+     "name": "Main.kt",
+     "content": "// Метод для обработки того или иного способа авторизации\nfun handleAuthorization(type: String) {\n    when (type) {\n        AuthorizationType.LOGIN -> println(\"login\")\n        AuthorizationType.PHONE_NUMBER -> println(\"phone\")\n        AuthorizationType.EMAIL -> println(\"email\")\n    }\n}\n\nfun main()  {\n\t// Этот метод можно использовать с константами, как и задумано\n    handleAuthorization(AuthorizationType.EMAIL)\n    handleAuthorization(AuthorizationType.LOGIN)\n\t// Но никто не запрещает использовать здесь случайную строку!\n    handleAuthorization(\"pincode\")\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "lesson": "Классы enum",
+  "lid": "32322e57-8457-4daa-9e44-6b96e54e4577",
+  "kind": "task",
+  "task_id": "2d28153b-404b-40da-89fe-961fe6bf87a6"
+ },
+ {
+  "lesson": "Наследование в Kotlin",
+  "lid": "34e972a0-b21d-411f-af2a-ac56fddae9cb",
+  "kind": "task",
+  "task_id": "379cd50d-e03f-4b11-925e-068a4f8b2be1"
+ },
+ {
+  "lesson": "Изолированные классы и интерфейсы",
+  "lid": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "kind": "quiz_coding",
+  "block_id": "f00db329-8cb1-48f7-b587-3c740f1dba32",
+  "content": {
+   "id": "e76ef500-f259-4ec7-922e-e0b43f559174",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "import kotlin.random.Random\n\ndata class State(\n    val content: String?,\n    val error: String?,\n    val isLoading: Boolean\n)\n\nclass UserScreen {\n\n    fun render(state: State) {\n        if (state.content != null) {\n            println(\"Показываем контент: ${state.content}\")\n        }\n\n        if (state.error != null) {\n            println(\"Показываем ошибку: ${state.error}\")\n        }\n        if (state.isLoading) {\n            println(\"Показываем загрузку\")\n        }\n    }\n}\n\nclass ContentDownloader(private val userScreen: UserScreen) {\n\n    fun downloadContent() {\n        val state = when (Random.nextInt(3)) {\n            0 -> State(\n                content = \"Кот Борис\",\n                error = null,\n                isLoading = false\n            )\n            1 -> State(\n                content = null,\n                error = null,\n                isLoading = true\n            )\n            else -> State(\n                content = null,\n                error = \"Похоже, злые бурундуки отключили нам интернет\",\n                isLoading = false\n            )\n        }\n\n        userScreen.render(state)\n    }\n}\n\nfun main() {\n    val contentDownloader = ContentDownloader(UserScreen())\n    for (i in 0..5)\n        contentDownloader.downloadContent()\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "lesson": "Изолированные классы и интерфейсы",
+  "lid": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "kind": "quiz_coding",
+  "block_id": "982a8601-693e-4fbe-8135-7dfb8c677f7d",
+  "content": {
+   "id": "a9f717bb-7bc8-4be9-9748-c74143b81ca5",
+   "hint": "",
+   "panes": [
+    {
+     "id": "f21618e9-1d4d-4ece-a789-24c24dc2e8f0",
+     "name": "Practicum.kt",
+     "content": "import kotlin.random.Random\n\nsealed interface State {\n\n    // помним, что в Kotlin нет ключевых слов extends и implements, вместо них используется двоеточие \":\"\n    data class Data(val content: String) : State\n    data class Error(val error: String) : State\n    object Loading : State\n}\n\nclass UserScreen {\n\n    fun render(state: State) {\n        when (state) {\n            is State.Data -> println(\"Показываем контент: ${state.content}\")\n            is State.Error -> println(\"Показываем ошибку: ${state.error}\")\n            is State.Loading -> println(\"Показываем загрузку\")\n        }\n    }\n}\n\nclass ContentDownloader(private val userScreen: UserScreen) {\n\n    fun downloadContent() {\n        val state = when (Random.nextInt(3)) {\n            0 -> State.Data(\"Кот Борис\")\n            1 -> State.Loading\n            else -> State.Error(\"Похоже, злые бурундуки отключили нам интернет\")\n        }\n\n        userScreen.render(state)\n    }\n}\n\nfun main() {\n    val contentDownloader = ContentDownloader(UserScreen())\n    for (i in 0..10)\n        contentDownloader.downloadContent()\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "lesson": "Изолированные классы и интерфейсы",
+  "lid": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "kind": "task",
+  "task_id": "17d9b34b-120d-469c-bba3-3f4eac8dd5f4"
+ },
+ {
+  "lesson": "Паттерн Singleton и Object в Kotlin",
+  "lid": "8606bc16-c5e2-462d-a1e9-e12bf9f6a826",
+  "kind": "task",
+  "task_id": "fc33067c-2fb9-4230-ab04-1303906820d3"
+ },
+ {
+  "lesson": "Анонимные классы в Kotlin",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "kind": "quiz_coding",
+  "block_id": "42d7262a-c9c0-4f5e-b5bc-491ec94c6c69",
+  "content": {
+   "id": "39677ddf-f1e1-4c64-82c4-8d3999a3d4f2",
+   "hint": "Учтите разницу между вложенными и внутренними классами, а также тем, как создаются объекты этих классов.\n",
+   "panes": [
+    {
+     "id": "9898ae80-cbc6-48b6-b248-505eb6b87a27",
+     "name": "Practicum.kt",
+     "content": "class RecyclerViewAdapter {\n\n    val dataList = listOf(\"Анна\", \"Василий\")\n    class ViewHolder() {\n        fun resendAllData(): List<String> {\n       \t\treturn dataList\n   \t\t}\n    }\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": "Иногда нам нужно всего одно слово!\n"
+  }
+ },
+ {
+  "lesson": "Анонимные классы в Kotlin",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "kind": "task",
+  "task_id": "6b027798-1c46-41a7-9a69-e767654d012f"
+ },
+ {
+  "lesson": "Анонимные классы в Kotlin",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "kind": "task",
+  "task_id": "a3fdcf6d-3ca1-4e7b-b925-09c4d14e206e"
+ },
+ {
+  "lesson": "Анонимные классы в Kotlin",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "kind": "task",
+  "task_id": "a6204ec4-2bda-48b0-9b4e-eb2c9f280603"
+ },
+ {
+  "lesson": "Функции высшего порядка",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "kind": "quiz_coding",
+  "block_id": "f37544db-3275-4d3d-9ec8-9f7ef81703a8",
+  "content": {
+   "id": "aec7ac2b-3a99-447c-98be-fece60ff81f8",
+   "hint": "Без подсказок в этот раз.",
+   "panes": [
+    {
+     "id": "62932d63-ab91-442f-b8dd-c6aefc1cbdc5",
+     "name": "Practicum.kt",
+     "content": "fun downloadCat(\n    onSuccess: () -> Unit\n) {\n    // загружает фотографии котиков из интернета\n}\n\nfun main(){}\n",
+     "language": "java"
+    }
+   ],
+   "blocking": false,
+   "use_tests": true,
+   "success_feedback": "Ура! Всё получилось!"
+  }
+ },
+ {
+  "lesson": "Функции высшего порядка",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "kind": "quiz_coding",
+  "block_id": "e1d20e86-97a9-41b1-9cf5-14879a1c5fb1",
+  "content": {
+   "id": "11d46a6e-e0d5-4012-b695-a082ffa378f4",
+   "hint": " В аргументах достаточно указать только тип передаваемого аргумента.",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "fun downloadCat(\n    onSuccess: (Cat) -> Unit, \n    onError: () -> Unit\n) {\n    // загружает фотографии котиков из интернета\n}",
+     "language": "java"
+    }
+   ],
+   "blocking": false,
+   "use_tests": true,
+   "success_feedback": "Ура! Вы справились!"
+  }
+ },
+ {
+  "lesson": "Функции высшего порядка",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "kind": "quiz_coding",
+  "block_id": "2295ff7f-a580-425b-980f-e6016491e4a1",
+  "content": {
+   "id": "ac3d2303-e349-46e2-a60f-821365465c22",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "import kotlin.random.Random\n\nfun main() {\n    val catDownloader = CatDownloader()\n    catDownloader.downloadCat(\n        onSuccess = { cat -> println(\"Кот ${cat.name} загружен успешно\") },\n        onError = { error -> println(error) }\n    )\n}\n\nclass CatDownloader {\n\n    // передаем в аргументы 2 функции onSuccess и onError\n    fun downloadCat(\n        onSuccess: (Cat) -> Unit,\n        onError: (String) -> Unit\n    ) {\n        val cat: Cat? = getCatFromInternet()\n\n        if (cat != null) {\n            onSuccess.invoke(cat)\n        } else {\n            onError(\"Упс, что-то пошло не так при загрузке котеек.\")\n        }\n\n    }\n\n    private fun getCatFromInternet(): Cat? {\n        return if (Random.nextBoolean()) Cat(\"Борис\") else null\n    }\n}\n\nclass Cat(val name: String)",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": "Ура! Вы справились!"
+  }
+ },
+ {
+  "lesson": "Функции высшего порядка",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "kind": "task",
+  "task_id": "b67ed566-8b43-4c50-8041-3c94a3b04157"
+ },
+ {
+  "lesson": "Функции высшего порядка",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "kind": "task",
+  "task_id": "628aa2aa-9121-43f8-8afa-d75364e75145"
+ },
+ {
+  "lesson": "Функции высшего порядка",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "kind": "task",
+  "task_id": "05fa05a4-3923-41c2-ad31-a66564da8ef8"
+ },
+ {
+  "lesson": "Мульти-декларации",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "kind": "quiz_coding",
+  "block_id": "f9b27987-c15c-4afc-850f-da8e305b82a6",
+  "content": {
+   "id": "6fef8690-929b-48b6-8598-a26cc8e4a26b",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "data class Person(val name: String, val age: Int)\n  \nfun main() {\n    val personsMap: HashMap<Int, Person> = HashMap()\n    personsMap.put(1, Person(\"Коля\", 12))\n    personsMap.put(2, Person(\"Алёна\", 17))\n    personsMap.put(3, Person(\"Настя\", 11))\n\n    for ((key, value) in personsMap){\n        println(\"key = $key, value = $value\")\n    }\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "lesson": "Мульти-декларации",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "kind": "quiz_coding",
+  "block_id": "2ad35dfd-dcf2-467b-b86a-3039fd8e22c1",
+  "content": {
+   "id": "617370ae-f8f0-4ffd-b4d4-991aa51663c8",
+   "hint": "- Параметры при деструктуризирующем присваивании должны быть обёрнуты в круглые скобки `( )` и перечислены через запятую `,`\n- Количество таких параметров должно быть равно количеству параметров в классе `HoneyBear`",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "data class HoneyBear(\n    val name: String,\n    val size: Int,\n    val color: String,\n)\n\nfun interface CanEat {\n    fun eat(honeyBear: HoneyBear)\n}\n\nfun main() {\n    val honeyBear = HoneyBear(\"Задира\", 5, \"Чёрный\")\n    val canEatLambda = CanEat { honeyBear ->\n        println(\"Медоед ${honeyBear.name} имеет размер ${honeyBear.size} и цвет ${honeyBear.color}\")\n    }\n\n    println(\"Медоед $name имеет размер $size и цвет $color\")\n    canEatLambda.eat(HoneyBear(\"Злюка\", 12, \"Рыжий\"))\n}",
+     "language": "java"
+    }
+   ],
+   "blocking": false,
+   "use_tests": true,
+   "success_feedback": "Ура! У Вас получилось!"
+  }
+ },
+ {
+  "lesson": "Мульти-декларации",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "kind": "quiz_coding",
+  "block_id": "422cd88f-21cb-4e3f-be40-94b4c8ad5c43",
+  "content": {
+   "id": "8ae8fdf4-107d-44b7-a964-ca29e5f5f1e4",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "class Person(val name: String, val age: Int) {\n\n    // перегружаем функцию plus(). \n    operator fun plus(person: Person): Int { // возвращаемый тип здесь может быть любой\n        return person.age + age\n    }\n}\n\nfun main() {\n    val kolya = Person(\"Коля\", 12)\n    val dasha = Person(\"Даша\", 16)\n\n    println(kolya + dasha)\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "lesson": "Мульти-декларации",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "kind": "task",
+  "task_id": "446e05b4-2b15-4e62-aaf5-a754ab7e240e"
+ }
+]

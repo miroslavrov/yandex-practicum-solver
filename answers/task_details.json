@@ -1,0 +1,417 @@
+[
+ {
+  "kind": "task",
+  "task_id": "f9c74e04-4227-4c50-b94a-9651ac79c966",
+  "lid": "2a0d9fae-7df2-417f-8ad2-e984b6a7187f",
+  "lesson": "Цикл while в Kotlin",
+  "solved": false,
+  "description": "Нужно вывести на консоль такую последовательность чисел:\n\"1 2 4 8 16 32 64 128 256 512 1024 ...\"\n\n{quiz-task}\n    background: |\n        #f5f6f7\n    header: |\n        \n    content: |\n        Напомним, что напечатать что-то можно с помощью `println`.\n{/quiz-task}\n\nПоследнее значение в последовательности должно быть меньше или равно `<=` значению, переданному в функцию `calculate()` `max: Int`",
+  "panes": {
+   "Main.kt": "fun calculate(max: Int) {\n    // ваш код здесь\n}"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "4d7f0258-47b3-4bb4-abef-298117b7c01b",
+  "lid": "c7b106ae-311c-4ddf-b876-73b559b0a03e",
+  "lesson": "Массивы в Kotlin",
+  "solved": false,
+  "description": "## Задача на массивы в Kotlin\n\nВаш коллега начал писать код, но ушёл в отпуск, и задачу передали вам.\n\n```kotlin\nval temperatures = arrayOf(22, 25, 18, 30, 27, 19, 23)\nval days = arrayOf(\"Пн\", \"Вт\", \"Ср\", \"Чт\", \"Пт\", \"Сб\", \"Вс\")\n\n// Ваш код здесь\n\n```\n\nДополните код так, чтобы программа:\n\n1. Нашла и вывела самую высокую температуру за неделю.\n\n2. Вывела день недели, когда была самая высокая температура.\n\nОжидаемый вывод:\n\n```\nМаксимальная температура: 30°C\nДень с максимальной температурой: Чт\n```",
+  "panes": {
+   "Main.kt": "val temperatures = arrayOf(22, 25, 18, 30, 27, 19, 23)\nval days = arrayOf(\"Пн\", \"Вт\", \"Ср\", \"Чт\", \"Пт\", \"Сб\", \"Вс\")\n\n// Ваш код здесь"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "f171a4b6-456d-4e66-b2a3-bc793758ef56",
+  "lid": "bec86100-ed8e-4704-a7fe-b371952122b3",
+  "lesson": "Коллекции в Kotlin",
+  "solved": false,
+  "description": "Расширьте систему, добавив корзину товаров.\n\n1. Добавьте цены для всех товаров из каталога от 500 до 5000 рублей (с помощью `Random.nextInt()`).\n2. Создайте корзину для хранения товаров покупателя таким образом, чтобы там не было дубликатов товаров.\n3. Выведите количество и общую цену товаров в корзине.\n\nПример вывода:\n\n```\n=== КОРЗИНА ===\nТовары в корзине:\n- LEGO City (2500 руб.)\n- Барби (1500 руб.)\n\nОбщая сумма: 4000 руб.\nКоличество товаров: 2\n```",
+  "panes": {
+   "Main.kt": "fun main() {\n    // Создаем каталог товаров\n    val catalog = mapOf(\n        \"Конструкторы\" to listOf(\n            \"LEGO City\", \n            \"LEGO Technic\", \n            \"Магнитный конструктор\", \n            \"Деревянные кубики\", \n            \"Металлический конструктор\"\n        ),\n        \"Куклы\" to listOf(\n            \"Барби\", \n            \"Пупс\", \n            \"Кукла-принцесса\", \n            \"Интерактивная кукла\", \n            \"Кукла-балерина\"\n        ),\n        \"Машинки\" to listOf(\n            \"Гоночная машина\", \n            \"Грузовик\", \n            \"Полицейская машина\", \n            \"Пожарная машина\", \n            \"Трансформер\"\n        )\n    )\n    // добавьте цены товаров, корзину и выведите содержимое корзины, количество товаров и общую цену   \n}"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "36ba7d78-c65c-4cd3-88e8-b1d9e9074679",
+  "lid": "bec86100-ed8e-4704-a7fe-b371952122b3",
+  "lesson": "Коллекции в Kotlin",
+  "error": 403
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "470a3b5d-0338-4eb3-b359-27c049d1e996",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "lesson": "Коллекции в Kotlin. Функции",
+  "content": {
+   "id": "750f645e-5b98-469c-81f4-123263622a27",
+   "hint": "",
+   "panes": [
+    {
+     "id": "1fc8a805-e14e-4d4f-a1b7-0ef863a9bc5f",
+     "name": "Practicum.kt",
+     "content": "fun main(){\n    val fruits = listOf(\"яблоко\", \"банан\", \"апельсин\")\n    \n    println(fruits.sorted()) // по алфавиту по возрастанию\n    println(fruits.sortedDescending())  // по алфавиту по убыванию\n    println(fruits.sortedBy { fruit -> fruit.length }) // по длине строки\n    println(fruits.sortedByDescending { fruit -> fruit.length }) // по длине строки по убыванию\n}\n",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "ca6b31ba-cf53-4751-8b39-8612ca118171",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "lesson": "Коллекции в Kotlin. Функции",
+  "content": {
+   "id": "3020d37c-564f-4b36-aed9-09c498f9ba47",
+   "hint": "",
+   "panes": [
+    {
+     "id": "3301a7d8-051b-461f-b0e4-e2db2b860e56",
+     "name": "Practicum.kt",
+     "content": "fun main(){\n    val fruits = mutableListOf(\"яблоко\", \"банан\", \"апельсин\")\n    \n    fruits.sort()\n    println(fruits)\n    fruits.sortBy { fruit -> fruit.length }\n    println(fruits)\n}\n",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "c81b3ca2-bffe-47f9-956e-f970ff7f26ef",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "lesson": "Коллекции в Kotlin. Функции",
+  "solved": false,
+  "description": "Дан список чисел от 1 до 9. \nВыведите для каждого числа таблицу умножения от 1 до 9.\n\nРезультат вашего вывода должен быть в таком формате:\n\nТаблица умножения на 1\n1 * 1 = 1\n1 * 2 = 2\n... // другие значения до 9\n\nТаблица умножения на 2\n2 * 1 = 2\n2 * 2 = 4\n... // другие значения до 9",
+  "panes": {
+   "Main.kt": "val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9)"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "3e455486-53ff-4bab-afb2-d0de9630ee41",
+  "lid": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "lesson": "Коллекции в Kotlin. Функции",
+  "error": 403
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "1baad2a9-e245-40d7-9fe6-3b3a8638085e",
+  "lid": "32322e57-8457-4daa-9e44-6b96e54e4577",
+  "lesson": "Классы enum",
+  "content": {
+   "id": "1fe30ece-58fa-4bed-aac0-965d0d30a409",
+   "hint": "",
+   "panes": [
+    {
+     "id": "16386dad-28b7-4674-a07b-19dd4a8b57a4",
+     "name": "Main.kt",
+     "content": "// Метод для обработки того или иного способа авторизации\nfun handleAuthorization(type: String) {\n    when (type) {\n        AuthorizationType.LOGIN -> println(\"login\")\n        AuthorizationType.PHONE_NUMBER -> println(\"phone\")\n        AuthorizationType.EMAIL -> println(\"email\")\n    }\n}\n\nfun main()  {\n\t// Этот метод можно использовать с константами, как и задумано\n    handleAuthorization(AuthorizationType.EMAIL)\n    handleAuthorization(AuthorizationType.LOGIN)\n\t// Но никто не запрещает использовать здесь случайную строку!\n    handleAuthorization(\"pincode\")\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "2d28153b-404b-40da-89fe-961fe6bf87a6",
+  "lid": "32322e57-8457-4daa-9e44-6b96e54e4577",
+  "lesson": "Классы enum",
+  "solved": false,
+  "description": "Давайте решим довольно простую задачку. Реализуйте `enum class` `Week`, который будет в себе хранить 7 дней недели {MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY}.\nКласс должен иметь конструктор с полем `localizedName: String`, в котором на русском будет описано название дня недели («Понедельник», «Вторник» и так далее).\nКласс `Week` должен содержать метод `isWeekend(): String`, который будет в зависимости от дня недели возвращать строку «будний» для дней с понедельника по пятницу и «выходной» для остальных дней.\n\nПосле чего реализуйте функцию `main`, в котором нужно вывести текст для каждого из дней недели по порядку с понедельника до воскресенья: «[день] — [isWeekend()] день».\n\nПример ожидаемого вывода:\n\n```\nПонедельник - будний день\nВторник - будний день\nСреда - будний день\nЧетверг - будний день\nПятница - будний день\nСуббота - выходной день\nВоскресенье - выходной день\n```",
+  "panes": {
+   "Enums.kt": ""
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "379cd50d-e03f-4b11-925e-068a4f8b2be1",
+  "lid": "34e972a0-b21d-411f-af2a-ac56fddae9cb",
+  "lesson": "Наследование в Kotlin",
+  "solved": false,
+  "description": "Давайте создадим свою рок-группу.\nПеред вами есть `enum` `GroupRole`, который используется, чтобы указать роль каждого музыканта. При создании класса музыканта укажите, какую роль в группе будет выполнять музыкант.\nВсе музыканты (классы `Vocalist`, `Guitarist` и `Drummer`) должны наследоваться от класса `RockMusician` и реализовывать все его абстрактные поля.\nКаждый музыкант может выполнять одну из ролей, для этого нужно реализовать интерфейсы: `CanSing`, `CanPlayGuitar` и `CanPlayDrum`.\n\nБас-гитарист и соло-гитарист относятся к одному классу `Guitarist`, потому в этом классе роль задаётся при создании экземпляра класса. Во всех остальных классах роль задаётся в теле класса.\n\nВаша задача — реализовать необходимые классы `Vocalist`, `Guitarist` и `Drummer` в соответствии с ТЗ ниже, чтоб отыграть концерт.\nИ да пребудет с вами ROCK!",
+  "panes": {
+   "Main.kt": "enum class GroupRole(val title: String) {\n    VOCAL(\"Вокалист\"),\n    BASS(\"Бассист\"),\n    SOLO(\"Соло-гитарист\"),\n    DRUMS(\"Барабанщик\")\n}\n\nabstract class RockMusician {\n\n    abstract val name: String\n    abstract val role: GroupRole\n}\n\ninterface CanSing {\n\n    fun sing()\n}\n\ninterface CanPlayGuitar {\n\n    fun playGuitar()\n}\n\ninterface CanPlayDrum {\n\n    fun playDrum()\n}\n\n// унаследуйте данный класс от абстрактного класса RockMusician\n// имя музыканта должно был переопределено в конструкторе\n// его роль должна быть задана внутри класса как GroupRole.VOCAL\n// вокалист должен уметь петь - реализуйте интерфейс CanSing. Метод sing() должен выводить текст: \"We will, we will rock you\"\nclass Vocalist\n\n// унаследуйте данный класс от абстрактного класса RockMusician\n// имя музыканта должно был переопределено в конструкторе\n// поскольку и басс, и соло гитаристы являются гитаристами - их роль, как и имя, передаётся при создании в конструкторе.\n// гитаристы должны уметь играть на гитаре. Реализуйте интерфейс CanPlayGuitar. Метод playGuitar() выводит текст \"Играю на гитаре\"\nclass Guitarist\n\n// унаследуйте данный класс от абстрактного класса RockMusician\n// имя музыканта должно был переопределено в конструкторе\n// его роль должна быть задана внутри класса как GroupRole.DRUMS\n// барабанщик играет на ударных. Интерфейс CanPlayDrum поможет в этом, реализуйте его. Метод playDrum() выводит текст \"Пам парам пам пам, я играю на барабанах\"\nclass Drummer"
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "f00db329-8cb1-48f7-b587-3c740f1dba32",
+  "lid": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "lesson": "Изолированные классы и интерфейсы",
+  "content": {
+   "id": "e76ef500-f259-4ec7-922e-e0b43f559174",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "import kotlin.random.Random\n\ndata class State(\n    val content: String?,\n    val error: String?,\n    val isLoading: Boolean\n)\n\nclass UserScreen {\n\n    fun render(state: State) {\n        if (state.content != null) {\n            println(\"Показываем контент: ${state.content}\")\n        }\n\n        if (state.error != null) {\n            println(\"Показываем ошибку: ${state.error}\")\n        }\n        if (state.isLoading) {\n            println(\"Показываем загрузку\")\n        }\n    }\n}\n\nclass ContentDownloader(private val userScreen: UserScreen) {\n\n    fun downloadContent() {\n        val state = when (Random.nextInt(3)) {\n            0 -> State(\n                content = \"Кот Борис\",\n                error = null,\n                isLoading = false\n            )\n            1 -> State(\n                content = null,\n                error = null,\n                isLoading = true\n            )\n            else -> State(\n                content = null,\n                error = \"Похоже, злые бурундуки отключили нам интернет\",\n                isLoading = false\n            )\n        }\n\n        userScreen.render(state)\n    }\n}\n\nfun main() {\n    val contentDownloader = ContentDownloader(UserScreen())\n    for (i in 0..5)\n        contentDownloader.downloadContent()\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "982a8601-693e-4fbe-8135-7dfb8c677f7d",
+  "lid": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "lesson": "Изолированные классы и интерфейсы",
+  "content": {
+   "id": "a9f717bb-7bc8-4be9-9748-c74143b81ca5",
+   "hint": "",
+   "panes": [
+    {
+     "id": "f21618e9-1d4d-4ece-a789-24c24dc2e8f0",
+     "name": "Practicum.kt",
+     "content": "import kotlin.random.Random\n\nsealed interface State {\n\n    // помним, что в Kotlin нет ключевых слов extends и implements, вместо них используется двоеточие \":\"\n    data class Data(val content: String) : State\n    data class Error(val error: String) : State\n    object Loading : State\n}\n\nclass UserScreen {\n\n    fun render(state: State) {\n        when (state) {\n            is State.Data -> println(\"Показываем контент: ${state.content}\")\n            is State.Error -> println(\"Показываем ошибку: ${state.error}\")\n            is State.Loading -> println(\"Показываем загрузку\")\n        }\n    }\n}\n\nclass ContentDownloader(private val userScreen: UserScreen) {\n\n    fun downloadContent() {\n        val state = when (Random.nextInt(3)) {\n            0 -> State.Data(\"Кот Борис\")\n            1 -> State.Loading\n            else -> State.Error(\"Похоже, злые бурундуки отключили нам интернет\")\n        }\n\n        userScreen.render(state)\n    }\n}\n\nfun main() {\n    val contentDownloader = ContentDownloader(UserScreen())\n    for (i in 0..10)\n        contentDownloader.downloadContent()\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "17d9b34b-120d-469c-bba3-3f4eac8dd5f4",
+  "lid": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "lesson": "Изолированные классы и интерфейсы",
+  "solved": false,
+  "description": "В любом приложении могут быть ошибки. Один из ключевых показателей хорошего приложения — правильная обработка ошибок. В нашем приложении также могут быть ошибки сети. Каждый раз, когда нам нужно получить какую-то информацию из удалённого сервера, мы совершаем сетевой запрос.\nЗапросы могут вернуть ошибку, но ошибки бывают разные. В нашем случае их 3 вида:\n\n1. Ошибка сервера. Такая ошибка возникает, когда на удалённом сервере какой-то сбой. Мы не можем ничего с этим сделать, потому всё, что мы можем — это показать пользователю сообщение об ошибке.\n2. Нет данных. Такая ошибка говорит, что запрос отработал успешно, но по какой-то причине не вернул данных. В такой ситуации нам лучше показать пользователю экран с пустыми данными (заглушку).\n3. Нет соединения с интернетом. Показываем пользователю сообщение об отсутствии соединения и при возобновлении заново выполняем запрос.\n\nЧто нужно сделать:\n\n- реализуйте свой собственный `sealed class NetworkError`, который будет иметь 3 состояния: `ServerError`, `NoData` и `NoInternet`.\n    - `ServerError` говорит, что запрос получил ошибку с сервера.\n    - `NoData` ошибка говорит, что в ответе на сетевой запрос пришли пустые данные.\n    - `NoInternet` говорит об отсутствии интернета на устройстве пользователя.\n- в классе `ErrorHandler` есть метод `handleError()`, который будет получать и обрабатывать ошибки. Ваша задача описать в нём логику обработки каждого вида ошибки.\n- в классе `Network` метод `onNetworkError()` будет вызван всякий раз, когда будет получена ошибка. Ваша задача в зависимости от кода ошибки сгенерировать правильный экземпляр класса `NetworkError`.",
+  "panes": {
+   "Main.kt": "...// реализуйте sealed класс NetworkError, который будет принимать на вход поле message типа String\n... // у класса NetworkError должно быть 3 наследника\n    ... // ServerError -> принимает на вход 2 параметра: requestId: String и message: String?. Должен передавать в родительский класс NetworkError сообщение: \"Ошибка взаимодействия с сервером для запроса: id = $requestId. Сообщение об ошибке: $message\"\n\n    ... // NoData -> на вход принимает только requestId: String. Передаёт сообщение в конструктор родителя: \"Для запроса: id = $requestId нет данных\"\n\n    ... // NoInternet -> на вход принимает только requestId: String. Поле должно быть доступно за пределами класса, т. е. должно быть объявлено как val\n    ... // Передаёт сообщение в конструктор родителя: \"Нет подключения к интернету.\"\n\n\nclass ErrorHandler {\n\n    fun handleError(error: NetworkError) {\n        ... // в этот метод будут приходить ошибки, полученные при выполнении запросов\n        ... // обработайте ошибки:\n            ... // если это ошибка сервера (ServerError) - просто покажите сообщение с ошибкой\n            ... // если данные не получены (NoData) - покажите пустой экран\n            ... // при отсутствии интернета (NoInternet) - показать ошибку пользователю и заново выполнить запрос (метод reloadRequest())\n    }\n\n    private fun showErrorMessage(message: String) {\n        println(message)\n    }\n\n    private fun showEmptyContent() {\n        println(\"Показываем пустой экран\")\n    }\n\n    private fun reloadRequest(requestId: String) {\n        println(\"При появлении подключения к интернету перезапускаем запрос: id = $requestId\")\n    }\n}\n\nclass Network {\n\n    fun onNetworkError(code: Int?, requestId: String, error: String?): NetworkError {\n        ... // метод будет вызываться программой всякий раз, когда будет получена ошибка\n            ... // возвращать ошибку NoInternet, если code = null\n            ... // возвращать ошибку NoData, если code = 200\n            ... // возвращать ошибку ServerError во всех остальных случаях\n    }\n}"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "fc33067c-2fb9-4230-ab04-1303906820d3",
+  "lid": "8606bc16-c5e2-462d-a1e9-e12bf9f6a826",
+  "lesson": "Паттерн Singleton и Object в Kotlin",
+  "solved": false,
+  "description": "Сейчас перед нами стоит непростая задача — нужно реализовать свинку-копилку. Необходимо сделать так, чтобы копилка была одна для всего приложения: нам очень важно, чтобы деньги были в одном месте. Поэтому копилка должна быть Singleton. В копилке должно быть два свойства:\n\n* список монет/купюр, положенных в копилку;\n\n* свойство типа `Boolean`, которое будет хранить в себе состояние копилки: она может быть разбита или нет (по умолчанию копилка целая).\n\n\nДля нашей копилки нужно создать три метода:\n\n* `putMoney(money: Money)`. С помощью этого метода можно положить новую монетку/купюру в копилку и вывести сообщение \"Добавлено в копилку \\$money\". Если на момент вызова метода копилка разбита, необходимо показать сообщение \"Вы разбили копилку, вы больше ничего положить туда не можете\" и завершить выполнение метода.\n\n* `shake(): Money?`. Иногда копилку можно потрясти, и оттуда выпадет монетка, если она есть. Купюра выпасть не может. Выпавшая монетка должна быть удалена из копилки. Если в копилке нет монеток — вернуть `null`. Если на момент вызова метода копилка разбита — показать сообщение \"Вы разбили копилку, больше оттуда ничего не вытрясти\" и вернуть из метода `null`.\n\n* `smash(): ArrayList<Money> `. Этот метод выводит сообщение \"Копилка разбита, вы достали оттуда: \\$moneys\", устанавливает флаг, что копилка разбита — true, возвращает список всех монет/купюр пользователю.\n\n\nНаша копилка должна принимать на вход монетки и купюры. Для этого вам необходимо создать класс `Money`. Класс `Money` должен иметь два поля:\n\n* `amount` типа `Float`, которое отражает номинал монетки/купюры;\n\n* `isCoin` типа `Boolean`, которое говорит, монетка ли данная денежка.\n\n&nbsp;\n\nКласс `Money` должен быть спроектирован так, чтоб не было возможности создавать монетки/купюры с любым номиналом. Нам нужны только:\n\n* монетки номиналом: 10 копеек (0.1f), 50 копеек (0.5f) и 1 рубль (1f);\n\n* купюры номиналом: 50, 100, 500 и 1000 рублей.\n\n\nПереопределите метод `toString()` в классе `Money` так, чтоб он возвращал строку вида:\n\n* \"10 коп.\" или \"1 руб.\" — если это монетка;\n\n* \"100 руб.\" — если это купюра.\n\nИспользуйте итератор. Когда мы работаем со списком (например, с `ArrayList`), нам часто нужно пройтись по всем его элементам — допустим, чтобы найти первую монетку и вытряхнуть её из копилки.\n\nНапомним, что **итератор** — это специальный инструмент, который позволяет удобно и безопасно перебирать элементы списка один за другим. Он похож на указатель или «палец», который двигается по списку.\n\n**Главное преимущество: с помощью итератора можно** **удалять элементы прямо во время перебора** — и всё будет работать правильно (в отличие от обычного цикла `for`).\n\nПример\n\n```\nval iterator = список.iterator()\n\nwhile (iterator.hasNext()) {\n    val элемент = iterator.next()\n    if (условие) {\n        iterator.remove()  // безопасное удаление\n    }\n}\n```\n\nМетоды:\n\n* `hasNext()` — есть ли ещё элементы;\n\n* `next()` — взять следующий элемент;\n\n* `remove()` — удалить текущий элемент.\n\n\nИспользуйте методы списка `add()` и `remove()`.\n\nМы используем `ArrayList`, чтобы хранить монетки и купюры в копилке. Это обычный список, с которым можно работать так:\n\n* `add(элемент)` — добавляет элемент в конец списка.\n\n```\nсписок.add(Money.coins_10)\n```\n\n* `remove(элемент)` — удаляет указанный элемент из списка (если он там есть).\n\n```\nсписок.remove(нужнаяМонета)\n```\n\n* Или с итератором: `iterator.remove()` — удалить текущий элемент во время перебора.\n\n**Обратите внимание:** если вы уже работаете с итератором, то нужно модифицировать его, а не исходный список!\n\nПодробно изучить методы работы с `ArrayList` вы можете [в официальной документации Kotlin](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-array-list/){target=\"_blank\"}.  \n\nЭти знания понадобятся, чтобы:\n\n* добавлять деньги в копилку (`add`);\n\n* удалять монетки при тряске (`iterator.remove`);\n\n* правильно перебрать все деньги в копилке (`iterator`).",
+  "panes": {
+   "Main.kt": "object PiggyBank {\n\n    ... // список монеток/купюр\n    ... // свойство, определяющее, разбита ли копилка\n\n    fun putMoney(money: Money) {\n        ... // проверьте, не разбита ли копилка\n\n        ... // добавьте монетку в копилку\n    }\n\n    fun shake(): Money? {\n        ... // проверьте, не разбита ли копилка\n\n        ... // вытрясти монетку из копилки (если в копилке нет монетки, вернуть null). Помните, купюры вытрясти нельзя.\n    }\n\n    fun smash(): ArrayList<Money> {\n        ... // установить флаг, что копилка разбита true, и вернуть все монетки, которые были в копилке\n    }\n}\n\n... // создайте класс Money, который будет отражать сущность монетки/купюры с двумя полями: amount и isCoin\n... // переопределите метод toString() так, чтобы он возвращал строку типа \"10 коп.\" или \"1 руб.\", если это монетка, и \"100 руб.\", если это купюра\n... // вы должны ограничить создание класса таким образом, чтобы можно было создать только ограниченный набор номиналов (см. задание)"
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "42d7262a-c9c0-4f5e-b5bc-491ec94c6c69",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "lesson": "Анонимные классы в Kotlin",
+  "content": {
+   "id": "39677ddf-f1e1-4c64-82c4-8d3999a3d4f2",
+   "hint": "Учтите разницу между вложенными и внутренними классами, а также тем, как создаются объекты этих классов.\n",
+   "panes": [
+    {
+     "id": "9898ae80-cbc6-48b6-b248-505eb6b87a27",
+     "name": "Practicum.kt",
+     "content": "class RecyclerViewAdapter {\n\n    val dataList = listOf(\"Анна\", \"Василий\")\n    class ViewHolder() {\n        fun resendAllData(): List<String> {\n       \t\treturn dataList\n   \t\t}\n    }\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": "Иногда нам нужно всего одно слово!\n"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "6b027798-1c46-41a7-9a69-e767654d012f",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "lesson": "Анонимные классы в Kotlin",
+  "solved": false,
+  "description": "На балконе у бабушки вы нашли классные костяные кубики. Давайте их немного побросаем. \n\nВам дан класс `DiceRoller`. \n\nЭтот класс только бросает кубики и выдаёт результат. Он не возвращает результат привычным нам способом, используя ключевое слово `return`. \n\nРезультат возвращается через интерфейс, который принимается в параметрах метода.\n\nВаша задача — создать экземпляр класса `DiceRoller` и бросить кубик десять раз, используя функцию `roll()`.\n\nЧтобы реализовать интерфейс `DiceRoller.Callback`, создайте анонимный класс.\n\nПри вызове функции `onRoll()` выведите сообщение: \"На кубиках выпало [первое значение] и [второе значение]\". \n\nПри вызове функции `onDouble()` выведите сообщение: \"Ура!!! Дубль на [значение]-ах! Бросаем еще раз\". После чего бросаем кубик повторно, вызывая метод `roll()` у класса `DiceRoller`.",
+  "panes": {
+   "Main.kt": "import kotlin.random.Random\n\nclass DiceRoller {\n\n    interface Callback {\n\n        fun onRoll(firstDiceValue: Int, secondDiceValue: Int)\n\n        fun onDouble(diceValue: Int)\n    }\n\n    fun roll(callback: Callback) {\n        val firstDiceValue = Random.nextInt(1, 7)\n        val secondDiceValue = Random.nextInt(1, 7)\n\n        if (firstDiceValue != secondDiceValue) {\n            callback.onRoll(firstDiceValue, secondDiceValue)\n        } else {\n            callback.onDouble(firstDiceValue)\n        }\n    }\n}\n\nfun main() {\n    // ваш код здесь\n}"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "a3fdcf6d-3ca1-4e7b-b925-09c4d14e206e",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "lesson": "Анонимные классы в Kotlin",
+  "error": 403
+ },
+ {
+  "kind": "task",
+  "task_id": "a6204ec4-2bda-48b0-9b4e-eb2c9f280603",
+  "lid": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "lesson": "Анонимные классы в Kotlin",
+  "error": 403
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "f37544db-3275-4d3d-9ec8-9f7ef81703a8",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "lesson": "Функции высшего порядка",
+  "content": {
+   "id": "aec7ac2b-3a99-447c-98be-fece60ff81f8",
+   "hint": "Без подсказок в этот раз.",
+   "panes": [
+    {
+     "id": "62932d63-ab91-442f-b8dd-c6aefc1cbdc5",
+     "name": "Practicum.kt",
+     "content": "fun downloadCat(\n    onSuccess: () -> Unit\n) {\n    // загружает фотографии котиков из интернета\n}\n\nfun main(){}\n",
+     "language": "java"
+    }
+   ],
+   "blocking": false,
+   "use_tests": true,
+   "success_feedback": "Ура! Всё получилось!"
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "e1d20e86-97a9-41b1-9cf5-14879a1c5fb1",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "lesson": "Функции высшего порядка",
+  "content": {
+   "id": "11d46a6e-e0d5-4012-b695-a082ffa378f4",
+   "hint": " В аргументах достаточно указать только тип передаваемого аргумента.",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "fun downloadCat(\n    onSuccess: (Cat) -> Unit, \n    onError: () -> Unit\n) {\n    // загружает фотографии котиков из интернета\n}",
+     "language": "java"
+    }
+   ],
+   "blocking": false,
+   "use_tests": true,
+   "success_feedback": "Ура! Вы справились!"
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "2295ff7f-a580-425b-980f-e6016491e4a1",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "lesson": "Функции высшего порядка",
+  "content": {
+   "id": "ac3d2303-e349-46e2-a60f-821365465c22",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "import kotlin.random.Random\n\nfun main() {\n    val catDownloader = CatDownloader()\n    catDownloader.downloadCat(\n        onSuccess = { cat -> println(\"Кот ${cat.name} загружен успешно\") },\n        onError = { error -> println(error) }\n    )\n}\n\nclass CatDownloader {\n\n    // передаем в аргументы 2 функции onSuccess и onError\n    fun downloadCat(\n        onSuccess: (Cat) -> Unit,\n        onError: (String) -> Unit\n    ) {\n        val cat: Cat? = getCatFromInternet()\n\n        if (cat != null) {\n            onSuccess.invoke(cat)\n        } else {\n            onError(\"Упс, что-то пошло не так при загрузке котеек.\")\n        }\n\n    }\n\n    private fun getCatFromInternet(): Cat? {\n        return if (Random.nextBoolean()) Cat(\"Борис\") else null\n    }\n}\n\nclass Cat(val name: String)",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": true,
+   "use_tests": false,
+   "success_feedback": "Ура! Вы справились!"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "b67ed566-8b43-4c50-8041-3c94a3b04157",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "lesson": "Функции высшего порядка",
+  "solved": false,
+  "description": "Мы с вами уже создали «Загрузчик Котиков», но сейчас он умеет загружать только одного котика. А наши пользователи хотят научиться загружать больше одного котика за раз. Наш джуниор-разработчик уже реализовал первую версию «Загрузчик Котиков 2», но в ней есть несколько проблем:\n\n* Она загружает всех котиков и только потом показывает их пользователю.  \n* Иногда котики загружаются с ошибками, и пользователю вместо котика показывается `null`.\n\nДавайте попробуем изменить работу класса `CatDownloaderV2` так, чтобы он соответствовал трём главным требованиям:\n\n* Котики должны показываться по мере их загрузки. Как лента в приложении соцсетей отображается постепенно, так и котики должны являться пользователю по мере их загрузки.  \n* Если при загрузке котика произошла ошибка (метод `getCatFromInternet()` вернул `null`), мы должны показать пользователю ошибку, а не `null` котика.  \n* После того как все котики загрузятся, нужно сообщить пользователю, что в интернете котиков больше нет.\n\nДля этого необходимо изменить метод `downloadCats()` так, чтобы он на вход принимал четыре параметра:\n\n1. Количество котиков, которые хочет загрузить пользователь, — `(Int)`.  \n2. Функцию `onNext`, которая будет выполняться каждый раз, когда новый котик загружается. Функция в качестве аргумента должна иметь один параметр `Cat` и ничего не возвращать `Unit`.  \n3. Функцию `onComplete`, которая будет выполнена, когда все котики загрузятся. Функция не должна иметь аргументов и ничего не будет возвращать.  \n4. Функцию `onError`, которая будет выполняться всякий раз, когда загрузка котиков будет выдавать ошибку (возвращать `null`).\n\n \n\nТакие функции, как `onNext`/ `onComplete`/ `onError`, в которых сообщается какой-то результат или ошибка, называют **коллбеками.**\n\n \n\nФункция `downloadCats()` должна запускать цикл (количество итераций равно количеству котиков, которые хочет загрузить пользователь). На каждой итерации цикл должен пытаться загрузить котика. Если котик загружен успешно, вызывать функцию `onNext` и передавать в неё котика. Если котик загружен с ошибкой (метод `getCatFromInternet()` вернул `null`), то вызывать функцию `onError`. Когда все котики будут загружены, должна быть вызвана функция `onComplete`.\n\nДалее нужно создать объект `CatDownloaderV2` и вызвать у него метод `downloadCats()`. Количество котиков, которые должны быть загружены, берутся из переменной-константы `CATS_COUNT`. После загрузки каждого котика в лог должно выводиться сообщение «Котик {имя котика} успешно загружен». Используйте метод `showCat()`. Если во время загрузки котика произошла ошибка, то показать сообщение «Упс. При загрузке котика произошла ошибка :(» — метод `showError()`. По завершении загрузки нужно показать сообщение «Загрузка котиков завершена» — метод `showComplete()`.",
+  "panes": {
+   "Main.kt": "import kotlin.random.Random\n\nfun main() {\n    val catDownloaderV2 = CatDownloaderV2()\n\n    // перепишите данную реализацию согласно требованиям в задаче\n    val downloadedCats = catDownloaderV2.downloadCats(CATS_COUNT)\n    //В новой реализации в выводе такого сообщения необходимости не будет\n    println(\"Котики $downloadedCats показаны\")\n}\n\n\nfun showCat(cat: Cat) {\n    println(\"Котик ${cat.name} успешно загружен\")\n}\n\nfun showComplete() {\n    println(\"Загрузка котиков завершена\")\n}\n\nfun showError() {\n    println(\"Упс. При загрузке котика произошла ошибка :(\")\n}\n\n// константа для выбора количества загруженных котиков\nconst val CATS_COUNT = 5\n\n\n\nclass CatDownloaderV2 {\n\n    // перепишите метод согласно заданию. Используйте функции в качестве параметров для реагирования на события загрузки котиков\n    fun downloadCats(count: Int): List<Cat?> {\n        val catsList = mutableListOf<Cat?>()\n        for (i in 1..count) {\n            catsList.add(getCatFromInternet())\n        }\n\n        return catsList;\n    }\n\n    // этот метод переписывать не нужно. Но если вам хочется добавить разнообразия — вы можете придумать свою логику генерации котиков ¯\\_(ツ)_/¯\n    private fun getCatFromInternet(): Cat? {\n        return when (Random.nextInt(5)) {\n            0 -> null\n            1 -> Cat(\"Борис\")\n            2 -> Cat(\"Кузьма\")\n            3 -> Cat(\"Барсик\")\n            4 -> Cat(\"Кефирчик\")\n            else -> null\n        }\n    }\n}\n\ndata class Cat(val name: String)"
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "628aa2aa-9121-43f8-8afa-d75364e75145",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "lesson": "Функции высшего порядка",
+  "error": 403
+ },
+ {
+  "kind": "task",
+  "task_id": "05fa05a4-3923-41c2-ad31-a66564da8ef8",
+  "lid": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "lesson": "Функции высшего порядка",
+  "error": 403
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "f9b27987-c15c-4afc-850f-da8e305b82a6",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "lesson": "Мульти-декларации",
+  "content": {
+   "id": "6fef8690-929b-48b6-8598-a26cc8e4a26b",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "data class Person(val name: String, val age: Int)\n  \nfun main() {\n    val personsMap: HashMap<Int, Person> = HashMap()\n    personsMap.put(1, Person(\"Коля\", 12))\n    personsMap.put(2, Person(\"Алёна\", 17))\n    personsMap.put(3, Person(\"Настя\", 11))\n\n    for ((key, value) in personsMap){\n        println(\"key = $key, value = $value\")\n    }\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "2ad35dfd-dcf2-467b-b86a-3039fd8e22c1",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "lesson": "Мульти-декларации",
+  "content": {
+   "id": "617370ae-f8f0-4ffd-b4d4-991aa51663c8",
+   "hint": "- Параметры при деструктуризирующем присваивании должны быть обёрнуты в круглые скобки `( )` и перечислены через запятую `,`\n- Количество таких параметров должно быть равно количеству параметров в классе `HoneyBear`",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "data class HoneyBear(\n    val name: String,\n    val size: Int,\n    val color: String,\n)\n\nfun interface CanEat {\n    fun eat(honeyBear: HoneyBear)\n}\n\nfun main() {\n    val honeyBear = HoneyBear(\"Задира\", 5, \"Чёрный\")\n    val canEatLambda = CanEat { honeyBear ->\n        println(\"Медоед ${honeyBear.name} имеет размер ${honeyBear.size} и цвет ${honeyBear.color}\")\n    }\n\n    println(\"Медоед $name имеет размер $size и цвет $color\")\n    canEatLambda.eat(HoneyBear(\"Злюка\", 12, \"Рыжий\"))\n}",
+     "language": "java"
+    }
+   ],
+   "blocking": false,
+   "use_tests": true,
+   "success_feedback": "Ура! У Вас получилось!"
+  }
+ },
+ {
+  "kind": "quiz_coding",
+  "block_id": "422cd88f-21cb-4e3f-be40-94b4c8ad5c43",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "lesson": "Мульти-декларации",
+  "content": {
+   "id": "8ae8fdf4-107d-44b7-a964-ca29e5f5f1e4",
+   "hint": "",
+   "panes": [
+    {
+     "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+     "name": "Practicum.kt",
+     "content": "class Person(val name: String, val age: Int) {\n\n    // перегружаем функцию plus(). \n    operator fun plus(person: Person): Int { // возвращаемый тип здесь может быть любой\n        return person.age + age\n    }\n}\n\nfun main() {\n    val kolya = Person(\"Коля\", 12)\n    val dasha = Person(\"Даша\", 16)\n\n    println(kolya + dasha)\n}",
+     "language": "kotlin"
+    }
+   ],
+   "blocking": false,
+   "use_tests": false,
+   "success_feedback": ""
+  }
+ },
+ {
+  "kind": "task",
+  "task_id": "446e05b4-2b15-4e62-aaf5-a754ab7e240e",
+  "lid": "a728b79f-386a-4206-93de-0d1714596077",
+  "lesson": "Мульти-декларации",
+  "solved": false,
+  "description": "Есть класс `Point`, который представляет собой точку в системе координат X-Y.\nВаша задача научиться проводить с ним арифметические операции с помощью операторов: `+`, `-`,`*` и `/`.\nПерегрузите данные операторы внутри класса `Point`. Они должны выполнять стандартные арифметические операции с координатами. \n\nНапример:\n\n`Point(4, 7) + Point(1, -2)` должно вернуть точку `Point(5, 5)`.\n`Point(4, 7) - Point(1, -2)` должно вернуть точку `Point(3, 9)`.",
+  "panes": {
+   "Main.kt": "class Point(private val x: Int, private val y: Int) {\n\n    // перегрузите оператор plus\n    // перегрузите оператор minus\n    // перегрузите оператор times\n    // перегрузите оператор div\n\n    override fun toString(): String {\n        return \"Point(x=$x, y=$y)\"\n    }\n}"
+  }
+ }
+]

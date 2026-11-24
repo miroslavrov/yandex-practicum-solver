@@ -1,0 +1,138 @@
+{
+ "f9c74e04-4227-4c50-b94a-9651ac79c966": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "fun calculate(max: Int) {\n    var n = 1\n    while (n <= max) {\n        print(\"$n \")\n        n = n * 2\n    }\n}\n"
+  }
+ ],
+ "4d7f0258-47b3-4bb4-abef-298117b7c01b": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "val temperatures = arrayOf(22, 25, 18, 30, 27, 19, 23)\nval days = arrayOf(\"Пн\", \"Вт\", \"Ср\", \"Чт\", \"Пт\", \"Сб\", \"Вс\")\n\nvar maxTemp = temperatures[0]\nvar maxIndex = 0\nfor (i in temperatures.indices) {\n    if (temperatures[i] > maxTemp) {\n        maxTemp = temperatures[i]\n        maxIndex = i\n    }\n}\nprintln(\"Максимальная температура: $maxTemp°C\")\nprintln(\"День с максимальной температурой: ${days[maxIndex]}\")\n"
+  }
+ ],
+ "f171a4b6-456d-4e66-b2a3-bc793758ef56": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "import kotlin.random.Random\n\nfun main() {\n    val catalog = mapOf(\n        \"Конструкторы\" to listOf(\n            \"LEGO City\",\n            \"LEGO Technic\",\n            \"Магнитный конструктор\",\n            \"Деревянные кубики\",\n            \"Металлический конструктор\"\n        ),\n        \"Куклы\" to listOf(\n            \"Барби\",\n            \"Пупс\",\n            \"Кукла-принцесса\",\n            \"Интерактивная кукла\",\n            \"Кукла-балерина\"\n        ),\n        \"Машинки\" to listOf(\n            \"Гоночная машина\",\n            \"Грузовик\",\n            \"Полицейская машина\",\n            \"Пожарная машина\",\n            \"Трансформер\"\n        )\n    )\n    val prices = mutableMapOf<String, Int>()\n    for ((category, items) in catalog) {\n        for (item in items) {\n            prices[item] = Random.nextInt(500, 5001)\n        }\n    }\n    val cart = mutableSetOf<String>()\n    cart.add(\"LEGO City\")\n    cart.add(\"Барби\")\n    cart.add(\"Гоночная машина\")\n    cart.add(\"Барби\")\n\n    println(\"=== КОРЗИНА ===\")\n    println(\"Товары в корзине:\")\n    var total = 0\n    var count = 0\n    for (item in cart) {\n        for ((name, price) in prices) {\n            if (name == item) {\n                println(\"- $name ($price руб.)\")\n                total += price\n                count++\n            }\n        }\n    }\n    println()\n    println(\"Общая сумма: $total руб.\")\n    println(\"Количество товаров: $count\")\n}\n"
+  }
+ ],
+ "c81b3ca2-bffe-47f9-956e-f970ff7f26ef": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "val numbers = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9)\n\nnumbers.forEach { n ->\n    println(\"Таблица умножения на $n\")\n    numbers.forEach { i ->\n        println(\"$n * $i = ${n * i}\")\n    }\n    println()\n}\n"
+  }
+ ],
+ "2d28153b-404b-40da-89fe-961fe6bf87a6": [
+  {
+   "name": "Enums.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "enum class Week(val localizedName: String) {\n    MONDAY(\"Понедельник\"),\n    TUESDAY(\"Вторник\"),\n    WEDNESDAY(\"Среда\"),\n    THURSDAY(\"Четверг\"),\n    FRIDAY(\"Пятница\"),\n    SATURDAY(\"Суббота\"),\n    SUNDAY(\"Воскресенье\");\n\n    fun isWeekend(): String = if (this == SATURDAY || this == SUNDAY) \"выходной\" else \"будний\"\n}\n\nfun main() {\n    for (day in Week.values()) {\n        println(\"${day.localizedName} - ${day.isWeekend()} день\")\n    }\n}\n"
+  }
+ ],
+ "379cd50d-e03f-4b11-925e-068a4f8b2be1": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "enum class GroupRole(val title: String) {\n    VOCAL(\"Вокалист\"),\n    BASS(\"Бассист\"),\n    SOLO(\"Соло-гитарист\"),\n    DRUMS(\"Барабанщик\")\n}\n\nabstract class RockMusician {\n\n    abstract val name: String\n    abstract val role: GroupRole\n}\n\ninterface CanSing {\n\n    fun sing()\n}\n\ninterface CanPlayGuitar {\n\n    fun playGuitar()\n}\n\ninterface CanPlayDrum {\n\n    fun playDrum()\n}\n\nclass Vocalist(override val name: String) : RockMusician(), CanSing {\n    override val role: GroupRole = GroupRole.VOCAL\n\n    override fun sing() {\n        println(\"We will, we will rock you\")\n    }\n}\n\nclass Guitarist(override val name: String, override val role: GroupRole) : RockMusician(), CanPlayGuitar {\n\n    override fun playGuitar() {\n        println(\"Играю на гитаре\")\n    }\n}\n\nclass Drummer(override val name: String) : RockMusician(), CanPlayDrum {\n    override val role: GroupRole = GroupRole.DRUMS\n\n    override fun playDrum() {\n        println(\"Пам парам пам пам, я играю на барабанах\")\n    }\n}\n"
+  }
+ ],
+ "17d9b34b-120d-469c-bba3-3f4eac8dd5f4": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "sealed class NetworkError(val message: String) {\n\n    class ServerError(requestId: String, message: String?) : NetworkError(\n        \"Ошибка взаимодействия с сервером для запроса: id = $requestId. Сообщение об ошибке: $message\"\n    )\n\n    class NoData(requestId: String) : NetworkError(\n        \"Для запроса: id = $requestId нет данных\"\n    )\n\n    class NoInternet(val requestId: String) : NetworkError(\n        \"Нет подключения к интернету.\"\n    )\n}\n\nclass ErrorHandler {\n\n    fun handleError(error: NetworkError) {\n        when (error) {\n            is NetworkError.ServerError -> showErrorMessage(error.message)\n            is NetworkError.NoData -> showEmptyContent()\n            is NetworkError.NoInternet -> {\n                showErrorMessage(error.message)\n                reloadRequest(error.requestId)\n            }\n        }\n    }\n\n    private fun showErrorMessage(message: String) {\n        println(message)\n    }\n\n    private fun showEmptyContent() {\n        println(\"Показываем пустой экран\")\n    }\n\n    private fun reloadRequest(requestId: String) {\n        println(\"При появлении подключения к интернету перезапускаем запрос: id = $requestId\")\n    }\n}\n\nclass Network {\n\n    fun onNetworkError(code: Int?, requestId: String, error: String?): NetworkError {\n        return when (code) {\n            null -> NetworkError.NoInternet(requestId)\n            200 -> NetworkError.NoData(requestId)\n            else -> NetworkError.ServerError(requestId, error)\n        }\n    }\n}\n"
+  }
+ ],
+ "fc33067c-2fb9-4230-ab04-1303906820d3": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "object PiggyBank {\n\n    private val moneys = arrayListOf<Money>()\n    private var isBroken = false\n\n    fun putMoney(money: Money) {\n        if (isBroken) {\n            println(\"Вы разбили копилку, вы больше ничего положить туда не можете\")\n            return\n        }\n        moneys.add(money)\n        println(\"Добавлено в копилку $money\")\n    }\n\n    fun shake(): Money? {\n        if (isBroken) {\n            println(\"Вы разбили копилку, больше оттуда ничего не вытрясти\")\n            return null\n        }\n        val iterator = moneys.iterator()\n        while (iterator.hasNext()) {\n            val money = iterator.next()\n            if (money.isCoin) {\n                iterator.remove()\n                return money\n            }\n        }\n        return null\n    }\n\n    fun smash(): ArrayList<Money> {\n        println(\"Копилка разбита, вы достали оттуда: $moneys\")\n        isBroken = true\n        val result = ArrayList(moneys)\n        moneys.clear()\n        return result\n    }\n}\n\nclass Money private constructor(val amount: Float, val isCoin: Boolean) {\n\n    override fun toString(): String {\n        return if (isCoin) {\n            if (amount >= 1f) \"${amount.toInt()} руб.\" else \"${(amount * 100).toInt()} коп.\"\n        } else {\n            \"${amount.toInt()} руб.\"\n        }\n    }\n\n    companion object {\n        val coins_10 = Money(0.1f, true)\n        val coins_50 = Money(0.5f, true)\n        val coins_100 = Money(1f, true)\n        val bill_50 = Money(50f, false)\n        val bill_100 = Money(100f, false)\n        val bill_500 = Money(500f, false)\n        val bill_1000 = Money(1000f, false)\n    }\n}\n"
+  }
+ ],
+ "6b027798-1c46-41a7-9a69-e767654d012f": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "import kotlin.random.Random\n\nclass DiceRoller {\n\n    interface Callback {\n\n        fun onRoll(firstDiceValue: Int, secondDiceValue: Int)\n\n        fun onDouble(diceValue: Int)\n    }\n\n    fun roll(callback: Callback) {\n        val firstDiceValue = Random.nextInt(1, 7)\n        val secondDiceValue = Random.nextInt(1, 7)\n\n        if (firstDiceValue != secondDiceValue) {\n            callback.onRoll(firstDiceValue, secondDiceValue)\n        } else {\n            callback.onDouble(firstDiceValue)\n        }\n    }\n}\n\nfun main() {\n    val diceRoller = DiceRoller()\n\n    val callback = object : DiceRoller.Callback {\n        override fun onRoll(firstDiceValue: Int, secondDiceValue: Int) {\n            println(\"На кубиках выпало $firstDiceValue и $secondDiceValue\")\n        }\n\n        override fun onDouble(diceValue: Int) {\n            println(\"Ура!!! Дубль на $diceValue-ах! Бросаем еще раз\")\n            diceRoller.roll(this)\n        }\n    }\n\n    repeat(10) {\n        diceRoller.roll(callback)\n    }\n}\n"
+  }
+ ],
+ "b67ed566-8b43-4c50-8041-3c94a3b04157": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "import kotlin.random.Random\n\nfun main() {\n    val catDownloaderV2 = CatDownloaderV2()\n\n    catDownloaderV2.downloadCats(\n        CATS_COUNT,\n        onNext = { cat -> showCat(cat) },\n        onComplete = { showComplete() },\n        onError = { showError() }\n    )\n}\n\n\nfun showCat(cat: Cat) {\n    println(\"Котик ${cat.name} успешно загружен\")\n}\n\nfun showComplete() {\n    println(\"Загрузка котиков завершена\")\n}\n\nfun showError() {\n    println(\"Упс. При загрузке котика произошла ошибка :(\")\n}\n\nconst val CATS_COUNT = 5\n\n\n\nclass CatDownloaderV2 {\n\n    fun downloadCats(count: Int, onNext: (Cat) -> Unit, onComplete: () -> Unit, onError: () -> Unit) {\n        for (i in 1..count) {\n            val cat = getCatFromInternet()\n            if (cat != null) {\n                onNext(cat)\n            } else {\n                onError()\n            }\n        }\n        onComplete()\n    }\n\n    private fun getCatFromInternet(): Cat? {\n        return when (Random.nextInt(5)) {\n            0 -> null\n            1 -> Cat(\"Борис\")\n            2 -> Cat(\"Кузьма\")\n            3 -> Cat(\"Барсик\")\n            4 -> Cat(\"Кефирчик\")\n            else -> null\n        }\n    }\n}\n\ndata class Cat(val name: String)\n"
+  }
+ ],
+ "446e05b4-2b15-4e62-aaf5-a754ab7e240e": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "class Point(private val x: Int, private val y: Int) {\n\n    operator fun plus(other: Point): Point = Point(x + other.x, y + other.y)\n\n    operator fun minus(other: Point): Point = Point(x - other.x, y - other.y)\n\n    operator fun times(other: Point): Point = Point(x * other.x, y * other.y)\n\n    operator fun div(other: Point): Point = Point(x / other.x, y / other.y)\n\n    override fun toString(): String {\n        return \"Point(x=$x, y=$y)\"\n    }\n}\n"
+  }
+ ],
+ "a3fdcf6d-3ca1-4e7b-b925-09c4d14e206e": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "import kotlin.random.Random\n\nclass DiceRollerV2 {\n\n    fun interface OnRollCallback {\n        fun call(firstDiceValue: Int, secondDiceValue: Int)\n    }\n\n    fun interface OnDoubleCallback {\n        fun call(diceValue: Int)\n    }\n\n    private var onRollCallback: OnRollCallback? = null\n    private var onDoubleCallback: OnDoubleCallback? = null\n\n    fun setCallbacks(onRollCallback: OnRollCallback, onDoubleCallback: OnDoubleCallback) {\n        this.onRollCallback = onRollCallback\n        this.onDoubleCallback = onDoubleCallback\n    }\n\n    fun roll() {\n        if (onRollCallback == null || onDoubleCallback == null) {\n            println(\"Вы должны вызвать функцию setCallbacks() прежде чем бросать кубики\")\n            return\n        }\n\n        val firstDiceValue = Random.nextInt(1, 7)\n        val secondDiceValue = Random.nextInt(1, 7)\n\n        if (firstDiceValue != secondDiceValue) {\n            onRollCallback?.call(firstDiceValue, secondDiceValue)\n        } else {\n            onDoubleCallback?.call(firstDiceValue)\n        }\n    }\n}\n\nfun main() {\n    val diceRoller = DiceRollerV2()\n\n    diceRoller.setCallbacks(\n        { firstDiceValue, secondDiceValue ->\n            println(\"На кубиках выпало $firstDiceValue и $secondDiceValue\")\n        },\n        {\n            println(\"Ура!!! Дубль на $it-ах! Бросаем ещё раз\")\n            diceRoller.roll()\n        }\n    )\n\n    repeat(10) {\n        diceRoller.roll()\n    }\n}\n"
+  }
+ ],
+ "628aa2aa-9121-43f8-8afa-d75364e75145": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "import kotlin.random.Random\n\n\nfun main() {\n    val catDownloader = CatDownloader()\n\n    catDownloader.downloadCat(\n        onStart = { println(\"Загрузчик Котиков начинает работу\") },\n        allowErrors = true,\n        onSuccess = { cat -> println(\"Кот ${cat.name} загружен успешно\") },\n        onError = { error -> println(error) }\n    )\n}\n\nclass CatDownloader {\n\n    fun downloadCat(\n        onStart: () -> Unit,\n        allowErrors: Boolean,\n        onSuccess: (Cat) -> Unit,\n        onError: (String) -> Unit\n    ) {\n        onStart()\n        var cat: Cat? = getCatFromInternet()\n        while (!allowErrors && cat == null) {\n            cat = getCatFromInternet()\n        }\n\n        if (cat != null) {\n            onSuccess.invoke(cat)\n        } else {\n            onError(\"Упс, что-то пошло не так при загрузке котеек.\")\n        }\n\n    }\n\n    private fun getCatFromInternet(): Cat? {\n        return if (Random.nextBoolean()) Cat(\"Борис\") else null\n    }\n}\n\nclass Cat(val name: String)\n"
+  }
+ ],
+ "36ba7d78-c65c-4cd3-88e8-b1d9e9074679": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "import kotlin.random.Random\n\nfun main() {\n    // Каталог товаров (готовая часть)\n    val catalog = mapOf(\n        \"Конструкторы\" to listOf(\n            \"LEGO City\",\n            \"LEGO Technic\",\n            \"Магнитный конструктор\",\n            \"Деревянные кубики\",\n            \"Металлический конструктор\"\n        ),\n        \"Куклы\" to listOf(\n            \"Барби\",\n            \"Пупс\",\n            \"Кукла-принцесса\",\n            \"Интерактивная кукла\",\n            \"Кукла-балерина\"\n        ),\n        \"Машинки\" to listOf(\n            \"Гоночная машина\",\n            \"Грузовик\",\n            \"Полицейская машина\",\n            \"Пожарная машина\",\n            \"Трансформер\"\n        )\n    )\n    // todo: создайте mutableMap для цен всех товаров\n    val prices = mutableMapOf<String, Int>()\n\n    // todo: заполните prices случайными ценами для каждого товара из catalog\n    for ((category, items) in catalog) {\n        for (item in items) {\n            prices[item] = Random.nextInt(500, 5001)\n        }\n    }\n\n    // todo: создайте корзину без дубликатов\n    val cart = mutableSetOf<String>()\n\n    // todo: добавьте в корзину минимум 2 товара из каталога\n    cart.add(\"LEGO City\")\n    cart.add(\"Барби\")\n    cart.add(\"Барби\")\n\n    // todo: выведите корзину в формате ниже\n    println(\"=== КОРЗИНА ===\")\n    println(\"Товары в корзине:\")\n\n    var totalSum = 0\n\n    // todo: пройдитесь по cart, выведите \"- <товар> (<цена> руб.)\"\n    // а итоговую сумму поместите в totalSum\n    for (item in cart) {\n        for ((name, price) in prices) {\n            if (name == item) {\n                println(\"- $name ($price руб.)\")\n                totalSum += price\n            }\n        }\n    }\n\n    println()\n    println(\"Общая сумма: $totalSum руб.\")\n    println(\"Количество товаров: ${cart.size}\")\n}\n"
+  }
+ ],
+ "a6204ec4-2bda-48b0-9b4e-eb2c9f280603": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "import java.util.*\n\nclass CoffeeMachine {\n\n    var water = 0\n    var milk = 0\n    var beans = 0\n\n    private var scanner = Scanner(System.`in`)\n\n    enum class Coffee(val coffeeName: String, val water: Int, val milk: Int, val beans: Int) {\n        ESPRESSO(\"эспрессо\", 60, 0, 10),\n        AMERICANO(\"американо\", 120, 0, 10),\n        CAPPUCCINO(\"капучино\", 120, 60, 20),\n        LATTE(\"латте\", 240, 120, 20)\n    }\n\n    fun start() {\n        println(\"Кофемашина готова к работе\")\n        do {\n            println(\"Введите команду\")\n            if (!scanner.hasNextLine()) {\n                return\n            }\n            val command = scanner.nextLine()\n            when (command.lowercase()) {\n                \"выключить\" -> {\n                    println(\"До свидания!\")\n                    return\n                }\n                \"наполнить\" -> refill()\n                \"статус\" -> printStatus()\n                \"кофе\" -> coffeeMenu()\n            }\n        } while (true)\n    }\n\n    // Меню выбора напитка\n    private fun coffeeMenu() {\n        println(\"\"\"Введите название напитка или \"назад\" для возврата в главное меню\"\"\")\n        if (!scanner.hasNextLine()) {\n            return\n        }\n        val name = scanner.nextLine()\n        if (name.equals(\"назад\", ignoreCase = true)) {\n            return\n        }\n        val coffee = Coffee.values().firstOrNull {\n            it.coffeeName.equals(name, ignoreCase = true) || it.name.equals(name, ignoreCase = true)\n        }\n        if (coffee == null) {\n            println(\"Рецепт не найден!\")\n            return\n        }\n        makeCoffee(coffee)\n    }\n\n    // Приготовление напитка по выбранному рецепту\n    private fun makeCoffee(coffee: Coffee) {\n        if (!isIngredientsEnough(coffee)) {\n            return\n        }\n        water -= coffee.water\n        milk -= coffee.milk\n        beans -= coffee.beans\n        println(\"${coffee.coffeeName} готов\")\n    }\n\n    // Пополнение ингредиентов до максимума\n    private fun refill() {\n        water = 2000\n        milk = 1000\n        beans = 500\n        println(\"Ингредиенты пополнены\")\n    }\n\n    // Вывод текущего состояния кофемашины\n    private fun printStatus() {\n        println(\"Ингредиентов осталось:\")\n        println(\"$water мл воды\")\n        println(\"$milk мл молока\")\n        println(\"$beans гр кофе\")\n    }\n\n    // Проверка, хватает ли ингредиентов для приготовления напитка\n    private fun isIngredientsEnough(coffee: Coffee): Boolean {\n        if (water < coffee.water) {\n            println(\"Недостаточно воды!\")\n            return false\n        }\n        if (milk < coffee.milk) {\n            println(\"Недостаточно молока!\")\n            return false\n        }\n        if (beans < coffee.beans) {\n            println(\"Недостаточно кофе!\")\n            return false\n        }\n        return true\n    }\n}\n"
+  }
+ ],
+ "05fa05a4-3923-41c2-ad31-a66564da8ef8": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "data class Query(val type: Int, val message: String) {\n    companion object {\n        const val ERROR = 0\n        const val WARNING = 1\n    }\n}\n\nclass QueryHandler {\n\n    fun handle(\n        queriesList: List<Query>,\n        onError: (String) -> Unit,\n        onWarning: (String) -> Unit,\n        onOther: (Int, String) -> Unit\n    ) {\n        for (query in queriesList) {\n            when (query.type) {\n                Query.ERROR -> onError(query.message)\n                Query.WARNING -> onWarning(query.message)\n                else -> onOther(query.type, query.message)\n            }\n        }\n    }\n}\n"
+  }
+ ],
+ "3e455486-53ff-4bab-afb2-d0de9630ee41": [
+  {
+   "name": "Main.kt",
+   "opened": true,
+   "language": "kotlin",
+   "content": "val students = mapOf(\n    \"Анна\" to listOf(5, 4, 5, 5, 4),\n    \"Алёна\" to listOf(5, 5, 5, 5, 5),\n    \"Кирилл\" to listOf(3, 4, 5, 3, 4),\n    \"Григорий\" to listOf(3, 3, 4, 3, 4),\n    \"Светлана\" to listOf(5, 5, 5, 5, 4),\n    \"Саша\" to listOf(4, 4, 4, 3, 5),\n    \"Степан\" to listOf(2, 3, 3, 2, 4),\n    \"Антон\" to listOf(2, 2, 3, 3, 3),\n    \"Катя\" to listOf(3, 3, 4, 5, 4),\n    \"Стас\" to listOf(5, 5, 5, 5, 4),\n)\n\nval result = students\n    .mapValues { it.value.average() }\n    .filter { it.value >= 4 }\n    .map { it.key }\n\nprintln(result)\n"
+  }
+ ]
+}

@@ -1,0 +1,1666 @@
+[
+ {
+  "name": "Введение",
+  "id": "0a8016eb-d5cb-4b29-afbb-00f68557b404",
+  "topics": [
+   {
+    "name": "Введение",
+    "id": "b4b8aea3-cb58-4ee0-87f5-c8e7261ecdfe",
+    "sprint_id": 1090673,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "0bcebf2d-696b-445c-99da-0da9730ca0c1",
+      "name": "Добро пожаловать!",
+      "solved": true
+     },
+     {
+      "id": "5587b329-ac05-4f9f-9ca4-a7f6aaecbd1b",
+      "name": "Чему вы научитесь",
+      "solved": true
+     },
+     {
+      "id": "4e2c0e2e-5f62-4a83-a236-7da096d68ac4",
+      "name": "Как помочь себе учиться эффективнее",
+      "solved": true
+     },
+     {
+      "id": "599a349f-2358-4a6f-80db-08f2766e4313",
+      "name": "Напутствие",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Введение в программирование, Kotlin",
+  "id": "90e76a8a-9456-4ba8-ae63-ba1be22c78eb",
+  "topics": [
+   {
+    "name": "Знакомимся с Kotlin",
+    "id": "2c29d8d7-4eb3-400a-b078-1cf66618e981",
+    "sprint_id": 1090676,
+    "solved": true,
+    "lessons": [
+     {
+      "id": "c23224a3-68dc-4f19-9055-72c2f6012771",
+      "name": "Знакомимся с Kotlin",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "История Kotlin",
+    "id": "834bd284-d389-4670-a4c9-43ef02d837dd",
+    "sprint_id": 1090676,
+    "solved": true,
+    "lessons": [
+     {
+      "id": "3e10c01b-616b-455d-a5b7-8471ef64bee4",
+      "name": "От Java к Kotlin",
+      "solved": true
+     },
+     {
+      "id": "d48398ed-4e25-499a-9289-f80bd14aae89",
+      "name": "Введение в Kotlin",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Переменные",
+    "id": "9d6a7460-d128-435b-ae6c-bbcf5252673a",
+    "sprint_id": 1090676,
+    "solved": true,
+    "lessons": [
+     {
+      "id": "c0ecb298-da28-4060-ae20-72c301d8ab96",
+      "name": "Типы данных и переменные в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "eecf6e9b-3390-46de-a5b5-e77c7a984561",
+      "name": "Работа с null в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "f8d4b14a-bedf-4365-9f85-ce0a20108046",
+      "name": "Приведение типов в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "dd05037c-be1d-4b62-977d-84cfcc9f294e",
+      "name": "Операции с простыми типами",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Строки и функции",
+    "id": "731fd790-7f76-4424-892c-1a437b7d25df",
+    "sprint_id": 1090676,
+    "solved": true,
+    "lessons": [
+     {
+      "id": "c96161e3-cc3e-4b28-b899-dc1164fe47b6",
+      "name": "Строки в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "75d53b0e-5f69-45db-bb33-705dedec05db",
+      "name": "Строковые шаблоны",
+      "solved": true
+     },
+     {
+      "id": "f56602c6-129c-4650-b8f5-b5903c074172",
+      "name": "Функции в Kotlin",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Операторы сравнения и условные операторы",
+    "id": "78a3759d-8890-4857-8400-23631cb25c01",
+    "sprint_id": 1090676,
+    "solved": true,
+    "lessons": [
+     {
+      "id": "1d1fd10d-d665-45ca-9004-707972d6d7fb",
+      "name": "Операторы сравнения",
+      "solved": true
+     },
+     {
+      "id": "3337019c-63c5-4773-9899-6f0ae820df4c",
+      "name": "Условные операторы",
+      "solved": true
+     },
+     {
+      "id": "4d64dd45-ed08-4aad-b664-21440983dab8",
+      "name": "Логические выражения",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Циклы",
+    "id": "ac534b86-5aac-4d7c-8420-2f4a8b000c5b",
+    "sprint_id": 1090676,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "d97a9d9c-7497-433a-b28a-0a38a3b5b560",
+      "name": "Цикл for в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "2a0d9fae-7df2-417f-8ad2-e984b6a7187f",
+      "name": "Цикл while в Kotlin",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Массивы, списки, итераторы",
+    "id": "833baafb-94f6-4d96-a032-5cf0c6641420",
+    "sprint_id": 1090676,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "c7b106ae-311c-4ddf-b876-73b559b0a03e",
+      "name": "Массивы в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "bec86100-ed8e-4704-a7fe-b371952122b3",
+      "name": "Коллекции в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+      "name": "Коллекции в Kotlin. Функции",
+      "solved": true
+     },
+     {
+      "id": "f55f3e87-1af7-4d28-ad29-c4d720f1f99f",
+      "name": "Iterator",
+      "solved": true
+     },
+     {
+      "id": "697217d8-dc0d-44df-b675-e0a86267b3ef",
+      "name": "Итоги спринта",
+      "solved": true
+     },
+     {
+      "id": "985e9765-f1cf-4f21-a854-89036a9e2b71",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Классы, инструменты разработки",
+  "id": "5760b8bc-db61-4afe-bcac-997a66ae54c9",
+  "topics": [
+   {
+    "name": "Базовая IDE",
+    "id": "205241d7-9661-4024-bfe2-11dceff93d13",
+    "sprint_id": 1090677,
+    "solved": true,
+    "lessons": [
+     {
+      "id": "d6e6e23b-5466-4688-a361-dd668f54da55",
+      "name": "Что такое IDE?",
+      "solved": true
+     },
+     {
+      "id": "f512741f-ebff-447f-be09-0b819f670bcc",
+      "name": "Установка и настройка",
+      "solved": true
+     },
+     {
+      "id": "66a37b9f-af45-4e0c-b905-7fa20e7bf42f",
+      "name": "Запуск проекта",
+      "solved": true
+     },
+     {
+      "id": "ec09d36a-d71e-4f04-8e52-978d28bf711b",
+      "name": "Гайд по проекту",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Библиотеки и классы",
+    "id": "3cc520cf-e396-4579-a314-afaf61cb94ee",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "db60330e-37f5-4d00-abde-50839aaa0078",
+      "name": "Kotlin Standard Library и другие библиотеки",
+      "solved": true
+     },
+     {
+      "id": "1a1c4282-4636-4787-8a54-928ac642637c",
+      "name": "Классы в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "f5a3367f-eea0-42eb-a034-cb4d8f74f615",
+      "name": "Свойства классов и блок init",
+      "solved": true
+     },
+     {
+      "id": "93e1e8c0-155a-46d0-a907-26fb78561114",
+      "name": "Методы в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "c4c4bff2-a668-4ab5-a645-05fd2363dbdf",
+      "name": "Дефолтные и именованные параметры",
+      "solved": true
+     },
+     {
+      "id": "32322e57-8457-4daa-9e44-6b96e54e4577",
+      "name": "Классы enum",
+      "solved": true
+     },
+     {
+      "id": "3904ec6d-725f-4976-817e-ebf44aa26af3",
+      "name": "Модификаторы доступа",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Наследование и интерфейсы",
+    "id": "7da56bdb-a3e1-4384-9ace-9074dd1f2886",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "34e972a0-b21d-411f-af2a-ac56fddae9cb",
+      "name": "Наследование в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+      "name": "Изолированные классы и интерфейсы",
+      "solved": true
+     },
+     {
+      "id": "3e30bc1f-ce16-4fb1-a628-bbd40670d427",
+      "name": "Система типов в Kotlin",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Расширенные возможности классов",
+    "id": "383ab7b7-6227-45b4-9bad-51de8d4cc679",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "ad50cbab-d525-4634-b04f-5cc3698d7e31",
+      "name": "Типы классов в Kotlin: логика, данные, утилиты",
+      "solved": true
+     },
+     {
+      "id": "8606bc16-c5e2-462d-a1e9-e12bf9f6a826",
+      "name": "Паттерн Singleton и Object в Kotlin",
+      "solved": true
+     },
+     {
+      "id": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+      "name": "Анонимные классы в Kotlin",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Top-level функции",
+    "id": "9ad14662-7477-42c0-b27c-4210c0cd3211",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+      "name": "Функции высшего порядка",
+      "solved": true
+     },
+     {
+      "id": "e2f6223a-ad5b-4fe7-82b4-5ec67ca8f0b7",
+      "name": "Функции-расширения",
+      "solved": true
+     },
+     {
+      "id": "a728b79f-386a-4206-93de-0d1714596077",
+      "name": "Мульти-декларации",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Дженерики",
+    "id": "30de520a-7817-4874-abee-e294f0ea28f2",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "43b70a87-cb8a-4fa8-abff-7654176ec499",
+      "name": "Дженерики",
+      "solved": true
+     },
+     {
+      "id": "9020115e-3ea5-46a2-9d8d-22a39816a46f",
+      "name": "Дженерики углубленные",
+      "solved": true
+     },
+     {
+      "id": "313c320e-f516-4522-91ed-ca338d313d86",
+      "name": "Работа с производными типами",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Git для самых маленьких",
+    "id": "6c31e030-88df-4860-8af2-04e151cf26fe",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "8131b444-4be9-41d9-8cde-4b6f673b1425",
+      "name": "Git и контроль версий",
+      "solved": true
+     },
+     {
+      "id": "d18d9bdc-8c6f-4706-acea-b0be399bfc10",
+      "name": "Git и GitHub",
+      "solved": true
+     },
+     {
+      "id": "a5e7df21-3ada-41f7-86d9-79c237e32e3d",
+      "name": "GitHub, commit и fork",
+      "solved": true
+     },
+     {
+      "id": "82efd44f-ae90-415c-ae23-57e0a34b951b",
+      "name": "Как скачать репозиторий",
+      "solved": true
+     },
+     {
+      "id": "960694e2-2aa0-4305-8a42-3f8c0fbdd682",
+      "name": "Ветки и совместная работа",
+      "solved": true
+     },
+     {
+      "id": "edb3ccc2-118d-4c3b-bb9b-535f1f8f3f7b",
+      "name": "Локальные изменения на GitHub",
+      "solved": true
+     },
+     {
+      "id": "c1821509-839b-4e2e-93f2-ce5af5026168",
+      "name": "Создаём первый Pull Request",
+      "solved": true
+     },
+     {
+      "id": "9413c6f9-0ccc-4a86-abbc-8018e87b0e88",
+      "name": "Проект «Контакты»",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Продвинутый Git и Git ignore",
+    "id": "b8295a61-a502-4553-ac30-117d9a5b20b8",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "2d981470-3266-4765-9f6e-fa7591fa553d",
+      "name": "Вступление",
+      "solved": true
+     },
+     {
+      "id": "61ad160b-7672-4668-9be8-cc77b1310063",
+      "name": "Командная строка",
+      "solved": true
+     },
+     {
+      "id": "e8c6409c-d771-4fc6-bad1-e89f369c07d9",
+      "name": "Шпаргалка по командной строке",
+      "solved": true
+     },
+     {
+      "id": "454caef7-04ba-429b-9a62-cdbcd24fe3de",
+      "name": "Устройство хранилища Git",
+      "solved": true
+     },
+     {
+      "id": "733e417d-0fc0-4845-aa71-9d876c699902",
+      "name": "Создание коммита в Git",
+      "solved": true
+     },
+     {
+      "id": "d5f750e6-fdb4-4ba7-bc75-05c5523e1a3c",
+      "name": "Манипулирование коммитами",
+      "solved": true
+     },
+     {
+      "id": "8a1c0169-5ab6-496f-b348-12bf4756c6a2",
+      "name": "Удалённый репозиторий Git",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа по основам KOTLIN",
+    "id": "9040fd1a-18de-4899-b8ec-82649c1e07eb",
+    "sprint_id": 1090677,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "c3c5b05b-3e14-4622-88af-c7eb8bbcb1ed",
+      "name": "Пробуем дженерики",
+      "solved": true
+     },
+     {
+      "id": "774bae6c-6c98-44fa-81b7-0324865f1267",
+      "name": "Чек-лист для самопроверки",
+      "solved": true
+     },
+     {
+      "id": "ea17ad2a-6d42-44cf-bde1-05b9d0f6fd80",
+      "name": "Итоги спринта 2",
+      "solved": true
+     },
+     {
+      "id": "7d3890ac-80ef-4540-983d-df9fa1029cc4",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Введение в Compose",
+  "id": "ad1cc489-1637-4d03-b747-d83011301594",
+  "topics": [
+   {
+    "name": "Начало основного этапа обучения",
+    "id": "cdb40956-48c0-4747-9358-022da2712e4d",
+    "sprint_id": 1090680,
+    "solved": true,
+    "lessons": [
+     {
+      "id": "fa4b0efd-bcf0-4cce-bc3d-0afbbccb4929",
+      "name": "Введение в сквозной проект",
+      "solved": true
+     },
+     {
+      "id": "46be00d3-bbb9-4622-b42b-f78ac37e2733",
+      "name": "Особенности ОС Android",
+      "solved": true
+     },
+     {
+      "id": "6546b0ce-5497-4882-9b71-1a4081368ef3",
+      "name": "Структура проекта",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Верстка пользовательского интерфейса",
+    "id": "1d5a57b3-5edf-406d-b0fb-780ac63ce119",
+    "sprint_id": 1090680,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "40ac2b2d-abc3-4f6f-b22b-0a5c9a6edc8d",
+      "name": "Figma",
+      "solved": true
+     },
+     {
+      "id": "2df5520c-1395-459e-bc1c-43b1939ce6a5",
+      "name": "Традиционный подход к разработке UI",
+      "solved": true
+     },
+     {
+      "id": "91c6cc00-33d3-42c9-a90b-4ce4d7cbfb4f",
+      "name": "Встречайте — Jetpack Compose",
+      "solved": true
+     },
+     {
+      "id": "92593918-904b-401f-b540-642e07bf637f",
+      "name": "Hello, world!",
+      "solved": true
+     },
+     {
+      "id": "337711c6-63d0-424c-bc64-241ac5b19b0f",
+      "name": "Режим предпросмотра для Jetpack Compose",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Элементы пользовательского интерфейса",
+    "id": "560a34fb-6275-4646-ad4d-68a3f2f2858c",
+    "sprint_id": 1090680,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "977aea86-4ea9-4a75-af15-051c0b77def7",
+      "name": "Text",
+      "solved": true
+     },
+     {
+      "id": "e9055249-6dd4-4565-ac2c-ecbf329c9f4c",
+      "name": "Знакомство с modifier",
+      "solved": true
+     },
+     {
+      "id": "608e6fab-13fe-4388-a377-4c2a5eb63f2e",
+      "name": "Image",
+      "solved": true
+     },
+     {
+      "id": "3136e125-b7da-4ec3-b89c-5d1a4105841d",
+      "name": "Button",
+      "solved": true
+     },
+     {
+      "id": "cf58aa58-1991-4d50-b3a5-2a33a43b9473",
+      "name": "Box",
+      "solved": true
+     },
+     {
+      "id": "16e5f473-4291-4191-9774-95dd5f51f920",
+      "name": "Column и Row",
+      "solved": true
+     },
+     {
+      "id": "7dc47f83-4779-410c-a0df-222d13101024",
+      "name": "DPI",
+      "solved": true
+     },
+     {
+      "id": "5da108f8-5a1a-4bc1-9bfc-8a73cc8f58f3",
+      "name": "Структура и синтаксис ресурсных файлов",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Навигация",
+    "id": "86fa825d-2985-4ad0-851f-de5c0f4122b5",
+    "sprint_id": 1090680,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "36a63df4-e431-4be5-8029-a3bb424b90b6",
+      "name": "Что такое навигация?",
+      "solved": true
+     },
+     {
+      "id": "264b2b7d-a870-4d17-8f1b-d1f3bb06a1a1",
+      "name": "Activity",
+      "solved": true
+     },
+     {
+      "id": "24128bf2-4104-45fc-801b-a81345f1fd4d",
+      "name": "Activity lifecycle",
+      "solved": true
+     },
+     {
+      "id": "6613f658-8dbb-4862-9e13-dce9cdcf3d0f",
+      "name": "Intent",
+      "solved": true
+     },
+     {
+      "id": "8ce5a414-4e85-4093-8b39-f3c642a7a527",
+      "name": "Навигация приложения",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "02e65e2e-630d-41f7-8cbf-9ef34d5cf17e",
+    "sprint_id": 1090680,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "c06f7bb3-b20a-4f92-b754-c822bcf677aa",
+      "name": "Практическое задание",
+      "solved": true
+     },
+     {
+      "id": "51623d0c-a80c-4a6d-ab01-4e7e5b03d180",
+      "name": "Итоги спринта 3",
+      "solved": true
+     },
+     {
+      "id": "3c1463d0-247e-4f31-bdcb-8f1b0fcc702a",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Продвинутый UI: детали Compose и работы приложения",
+  "id": "ecd3f657-ad1c-4f7f-a031-c71ba98e1911",
+  "topics": [
+   {
+    "name": "Context и Intent",
+    "id": "dd1c28e3-1cd6-4a72-b306-1f91d0f0cae6",
+    "sprint_id": 1090682,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "ee310e20-6151-428f-8f58-8653c82a6d8e",
+      "name": "Карта спринта",
+      "solved": true
+     },
+     {
+      "id": "9c9a3e81-8c49-4cb3-a7df-d5f1f2d32b38",
+      "name": "Context",
+      "solved": true
+     },
+     {
+      "id": "9ce80d2c-5a29-45a7-a7b8-406641a1e775",
+      "name": "Intent 2.0",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Углубляемся в принципы работы Jetpack Compose",
+    "id": "f6ffab5e-4db0-4b75-9ada-65d0df11eb5f",
+    "sprint_id": 1090682,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "31c02615-8424-4a02-adc4-6ad9b49d1c46",
+      "name": "Подробно о Jetpack Compose",
+      "solved": true
+     },
+     {
+      "id": "9d5668fa-e9f1-4633-b2f7-03fcc45bab13",
+      "name": "State и Jetpack Compose",
+      "solved": true
+     },
+     {
+      "id": "0a316550-024f-4f6b-b1f3-201f606b12f8",
+      "name": "Рекомпозиция",
+      "solved": true
+     },
+     {
+      "id": "3c9c2256-6671-41f7-920a-dabedf2e6391",
+      "name": "Side-эффекты",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Улучшаем интерфейс",
+    "id": "807e8680-da66-475c-989e-9dce39431552",
+    "sprint_id": 1090682,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "58e06034-3b80-4fbc-a4d0-c4919d331ae3",
+      "name": "Взаимодействие с элементами интерфейса",
+      "solved": true
+     },
+     {
+      "id": "767cd5ee-f7c7-43e6-907a-38675ea617e6",
+      "name": "TextField знакомство",
+      "solved": true
+     },
+     {
+      "id": "993c1e0a-5fae-46af-bc94-bf8fc52d2a32",
+      "name": "Продвинутый TextField",
+      "solved": true
+     },
+     {
+      "id": "354b8d21-b816-47ca-9526-fb723a40cebd",
+      "name": "Анимации и навигация",
+      "solved": true
+     },
+     {
+      "id": "edec7367-a43b-42ed-af18-f6fe71f271de",
+      "name": "Списки в Compose",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Хранение данных. Начало",
+    "id": "90b5a722-97f9-4ff8-bff1-6b5ac4b56a32",
+    "sprint_id": 1090682,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "12e37ee9-6191-4f60-b4e5-9409848b56e3",
+      "name": "Введение в хранение данных",
+      "solved": true
+     },
+     {
+      "id": "7bbcf3d0-5f36-41e6-aa17-2d034bf8f297",
+      "name": "Данные в жизни приложения",
+      "solved": true
+     },
+     {
+      "id": "9deebc7f-74f2-41df-8ebd-5970d98663e1",
+      "name": "Хранение на практике",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "06e36081-94e3-4fde-9a86-a84a30098f91",
+    "sprint_id": 1090682,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "df7b2e81-20dc-4c15-8eaa-dfab72586756",
+      "name": "Практическое задание",
+      "solved": true
+     },
+     {
+      "id": "a1f6b7b7-15d9-4040-8830-4fca15381fc6",
+      "name": "Итоги спринта 4",
+      "solved": true
+     },
+     {
+      "id": "3c1c8aa9-ecc9-4682-a6cd-05276020bbec",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Базовая современная архитектура",
+  "id": "214457bf-d3cf-4403-a1d0-8f44d1eb908b",
+  "topics": [
+   {
+    "name": "ООП и SOLID",
+    "id": "d588dcb6-4ea7-4448-8b6f-2bc17f049ea6",
+    "sprint_id": 1090684,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "8a3022f7-96cb-41c9-bab3-d7894be73f09",
+      "name": "Карта спринта",
+      "solved": true
+     },
+     {
+      "id": "b353a6c6-3072-43d6-822e-468ba092fa47",
+      "name": "ООП",
+      "solved": true
+     },
+     {
+      "id": "ca7b4b2a-b002-4d5d-9a6d-f1efec67cd3e",
+      "name": "SOLID",
+      "solved": true
+     },
+     {
+      "id": "c6e2bcb2-c29a-4c22-9d81-38e66bb28ed8",
+      "name": "Самостоятельная работа",
+      "solved": true
+     },
+     {
+      "id": "a68f0ec7-ad96-4bea-a0f7-55c404209ec3",
+      "name": "Понятие чистой архитектуры",
+      "solved": true
+     },
+     {
+      "id": "21dee267-b315-4cf5-8484-88c87b6ed9ce",
+      "name": "Архитектура в Android",
+      "solved": true
+     },
+     {
+      "id": "5015eac6-9fb7-481e-bdb2-60bbe0076f79",
+      "name": "Clean Architecture в деле",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "MVVM",
+    "id": "611b7576-c6ac-4e7f-a5da-52739107c371",
+    "sprint_id": 1090684,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "2fb291fe-5d16-45e6-98fd-a69a30f311ab",
+      "name": "Введение в архитектурные шаблоны",
+      "solved": true
+     },
+     {
+      "id": "1e593210-f4fb-4ad8-ac7e-2f29f9db3377",
+      "name": "Знакомимся с MVVM",
+      "solved": true
+     },
+     {
+      "id": "2f1dd1b9-7f12-4a75-af54-a4a23af56321",
+      "name": "Применяем MVVM",
+      "solved": true
+     },
+     {
+      "id": "833ba71e-5830-4eb7-a2fe-09f698600c4d",
+      "name": "Классы Flow",
+      "solved": true
+     },
+     {
+      "id": "166611e9-586f-4917-b172-008656f1e8f3",
+      "name": "Укрощаем MVVM",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Внедрение зависимостей, инструменты DI",
+    "id": "3ac15b1c-4a86-4d64-b16a-115ce3d34c42",
+    "sprint_id": 1090684,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "f2218cb6-93fc-4663-a301-7df5b1265f47",
+      "name": "Теория внедрения зависимостей",
+      "solved": true
+     },
+     {
+      "id": "55b4ebd5-b973-4fdf-816c-977af8c2162a",
+      "name": "Практика с DI",
+      "solved": true
+     },
+     {
+      "id": "164ea037-90eb-44b0-89b6-b076f500c5c9",
+      "name": "DI-фреймворки",
+      "solved": true
+     },
+     {
+      "id": "1105e617-691b-4c03-94cb-afab6d8c81df",
+      "name": "Koin",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "46dad840-3741-4ab6-b2a4-ec136d17ed2a",
+    "sprint_id": 1090684,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "01654e6b-504e-4fc0-aad6-aa8d1608cf47",
+      "name": "Экран поиска треков",
+      "solved": true
+     },
+     {
+      "id": "1d1d8498-159b-461b-bf8d-4e973fc4da80",
+      "name": "DI для фичи поиска",
+      "solved": true
+     },
+     {
+      "id": "f8e878a6-1604-4f4c-a9ec-91fa0dc06b30",
+      "name": "Итоги спринта 5",
+      "solved": true
+     },
+     {
+      "id": "9d550d39-d87c-4bde-aeb6-dcfbe392501f",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Продвинутый UI: фрагменты",
+  "id": "6475e705-c7b9-4361-9604-40eb87e16fad",
+  "topics": [
+   {
+    "name": "Введение во фрагменты",
+    "id": "4f06390c-6add-4d8f-b4db-453fd06f5a2c",
+    "sprint_id": 1090686,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "a74fd58d-0e56-47f3-a212-a5e2f4d76992",
+      "name": "Вступление",
+      "solved": true
+     },
+     {
+      "id": "85c2fa81-1a46-40e1-abab-a719aaeb7c84",
+      "name": "Навигация и Activity",
+      "solved": true
+     },
+     {
+      "id": "7459bf7b-8d85-47d5-b504-06dc219f567d",
+      "name": "Управление Back Stack",
+      "solved": true
+     },
+     {
+      "id": "913a4a95-eddf-4f4a-8c7d-b329aa772e7e",
+      "name": "Фрагменты",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Создание фрагментов",
+    "id": "37b99e88-e07d-4b05-8052-a5c238ea87e9",
+    "sprint_id": 1090686,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "e3456201-76ec-4291-8f75-778464b2e37e",
+      "name": "Жизненный цикл Fragment",
+      "solved": true
+     },
+     {
+      "id": "ef90dd43-b173-4933-9a66-2ea7ce4f4d80",
+      "name": "Создание Fragment",
+      "solved": true
+     },
+     {
+      "id": "c0a35645-e17e-4bfc-b89b-7be8854ee40d",
+      "name": "Переключение Fragment",
+      "solved": true
+     },
+     {
+      "id": "81a1c62b-afda-4497-bb55-178d079c3dfc",
+      "name": "Передача данных между фрагментами",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "39f252d4-17be-4ebc-9629-5cb24bb5c157",
+    "sprint_id": 1090686,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "3ad9fcf7-45a9-4209-9732-595b1c304920",
+      "name": "Практическое задание",
+      "solved": true
+     },
+     {
+      "id": "4ed7ad30-119c-494d-b4d0-21bcee81c13d",
+      "name": "Сдаём проект на промежуточную проверку",
+      "solved": true
+     },
+     {
+      "id": "cb6b5e70-17a8-46fa-9f3b-5c284f4c72ec",
+      "name": "Итоги спринта 6",
+      "solved": true
+     },
+     {
+      "id": "7501c4b5-8a37-4426-a6dc-f1c552a5e8a4",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Продвинутый UI: работа только с Compose",
+  "id": "21155f86-1ed1-40ba-b811-22c80f4802c0",
+  "topics": [
+   {
+    "name": "Навигация на Compose",
+    "id": "fe046416-d517-49e2-9113-6251b05ff527",
+    "sprint_id": 1090687,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "8d464ff6-5904-4aa7-9d58-1032a6298e88",
+      "name": "Разомнёмся?",
+      "solved": true
+     },
+     {
+      "id": "f0042c6c-ac9a-4433-b96d-2cf6a88bb7e2",
+      "name": "Навигация в Compose. NavController",
+      "solved": true
+     },
+     {
+      "id": "fa352f2f-6229-4400-88a4-9ca3462750ff",
+      "name": "Сохранение состояния",
+      "solved": true
+     },
+     {
+      "id": "546d8df3-5191-432d-a456-ca396fcd37af",
+      "name": "Pager в Compose",
+      "solved": true
+     },
+     {
+      "id": "44c28678-a517-4366-b854-1f247f43e559",
+      "name": "TabRow и NavHost",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "5a5020f2-ee6f-441c-b2bb-5cfdcbb3f872",
+    "sprint_id": 1090687,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "c204a402-1653-41c4-9f79-14e557401f1e",
+      "name": "Практическое задание",
+      "solved": true
+     },
+     {
+      "id": "765b3571-373f-4df9-87e8-e82fcf1a6cd8",
+      "name": "Итоги спринта",
+      "solved": true
+     },
+     {
+      "id": "bd1e15c0-7ba9-4e53-800b-079c965cfa3d",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Многопоточность",
+  "id": "87c36127-1f2b-46b1-bb4c-ab4263cd5ead",
+  "topics": [
+   {
+    "name": "Введение в многопоточность",
+    "id": "56a760b1-64e4-4013-b13c-93839da7e867",
+    "sprint_id": 1090690,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "ed1fdf4c-7bab-4941-bd3a-93bd387fd851",
+      "name": "Карта спринта",
+      "solved": true
+     },
+     {
+      "id": "576c606e-71ab-474a-88e1-624b3b49794f",
+      "name": "Подготовка к работе",
+      "solved": true
+     },
+     {
+      "id": "c6684d8b-8f31-42ae-8a43-e5fc344bbc22",
+      "name": "Работа кода программы",
+      "solved": true
+     },
+     {
+      "id": "8434e876-195a-43ec-967b-92b22efecaed",
+      "name": "Создание новых потоков",
+      "solved": true
+     },
+     {
+      "id": "158d1f71-6a4d-4c88-90dc-f5768a85f3b3",
+      "name": "Синхронизация",
+      "solved": true
+     },
+     {
+      "id": "e4aa9caa-0211-45d9-9293-0c45da282da6",
+      "name": "Жизненный цикл потоков",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Многопоточность в Android",
+    "id": "de6a05ce-6f58-4826-86a3-14bb5f5dc4f5",
+    "sprint_id": 1090690,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "cfc46d7f-05cf-4830-a75d-40087408a4cb",
+      "name": "Главный поток",
+      "solved": true
+     },
+     {
+      "id": "79864246-f033-4b00-bd04-b4bb26482348",
+      "name": "Классы и циклы главного потока",
+      "solved": true
+     },
+     {
+      "id": "15b5af9e-6ab1-4d44-8bb4-ae3ba1b031ba",
+      "name": "Многопоточность и Compose",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Корутины",
+    "id": "8fef6ad3-1beb-478c-8dd8-b997e9868c87",
+    "sprint_id": 1090690,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "9aac6f50-ede5-49a5-ba90-73f254cda3cd",
+      "name": "Крутые корутины",
+      "solved": true
+     },
+     {
+      "id": "5e299cd5-5f28-4584-a678-301fd3ee3d75",
+      "name": "Запуск корутин",
+      "solved": true
+     },
+     {
+      "id": "78b370cc-ff21-4578-90c2-fa2d4dc7d9bc",
+      "name": "Устройство CoroutineScope",
+      "solved": true
+     },
+     {
+      "id": "31dc1d5d-35b7-4d29-af98-2187a0c2ae87",
+      "name": "Особенности работы с корутинами",
+      "solved": true
+     },
+     {
+      "id": "381772e2-0db6-49b9-b95b-da067944c7d9",
+      "name": "Работа с потоками данных",
+      "solved": true
+     },
+     {
+      "id": "6ffa16d4-be98-4913-b978-a25c8a8f08b9",
+      "name": "Экран поиска и функция Debounce",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "98298c13-6ac9-4f7a-9155-359fd41e818f",
+    "sprint_id": 1090690,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "1b72f8a6-ffb0-4350-8303-e3f41946c867",
+      "name": "Практическое задание",
+      "solved": true
+     },
+     {
+      "id": "dbcec220-82db-4a77-9951-5ef95a7a7ddf",
+      "name": "Итоги спринта",
+      "solved": true
+     },
+     {
+      "id": "ae9b7106-0f97-4880-bd97-628ceb500590",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Сеть",
+  "id": "d3e7f829-df5b-4e81-b69e-ca6c7ac72383",
+  "topics": [
+   {
+    "name": "Введение в сеть",
+    "id": "6a1aa967-9258-47f6-93f4-6402af9ecb56",
+    "sprint_id": 1090692,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "c7ea0f5b-5401-4a3a-89a0-7f6854841e03",
+      "name": "Выходим в сеть",
+      "solved": true
+     },
+     {
+      "id": "7b1d339d-3ad6-4a50-a9f3-cf50c9c272d9",
+      "name": "Сервер",
+      "solved": true
+     },
+     {
+      "id": "36bd14e5-8a6a-43a1-9663-e929a816587f",
+      "name": "REST API",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "HTTP",
+    "id": "b82e6524-bda8-4cda-a652-422ae03dc829",
+    "sprint_id": 1090692,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "a02b8d53-c9cd-4ae0-b487-bce61f7cbba4",
+      "name": "Передача данных",
+      "solved": true
+     },
+     {
+      "id": "5fb3e2be-f0d8-46f9-a646-de4f4b9bdcaa",
+      "name": "HTTP",
+      "solved": true
+     },
+     {
+      "id": "6eaca5e6-a056-4d5e-9d67-b15fa51d1b12",
+      "name": "JSON",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Retrofit",
+    "id": "440c8e41-7af2-4e29-add9-82a321c1718b",
+    "sprint_id": 1090692,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "7b46a212-2bcd-4f05-8d36-30adbd1053bd",
+      "name": "Аннотации",
+      "solved": true
+     },
+     {
+      "id": "3ee3719d-4e20-450e-b178-aabf2dee6e6d",
+      "name": "Библиотека Gson",
+      "solved": true
+     },
+     {
+      "id": "399759fb-669c-4c1e-961a-d700f7a76414",
+      "name": "Библиотека Retrofit",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Работа с API на практике",
+    "id": "87aeb881-0079-4849-a945-01e8547bc5cd",
+    "sprint_id": 1090692,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "910e914d-4fc0-45ac-9548-527c2ae29291",
+      "name": "API и ошибки",
+      "solved": true
+     },
+     {
+      "id": "290fc698-8d53-471e-b314-940b3b10f9e5",
+      "name": "Авторизация запросов",
+      "solved": true
+     },
+     {
+      "id": "8156b215-7afe-446e-a6a6-8ce19f83d773",
+      "name": "Сетевые запросы и корутины",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Permissions",
+    "id": "bb15b9da-ea72-410e-87d6-8fdf4c4ca237",
+    "sprint_id": 1090692,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "65d1c561-f6de-4b95-81e5-d34ee8c97c8d",
+      "name": "Вопрос безопасности",
+      "solved": true
+     },
+     {
+      "id": "58345de4-e88a-4cf5-a02b-0fc9afd02224",
+      "name": "Типы Permissions",
+      "solved": true
+     },
+     {
+      "id": "34251c39-a987-4c61-8889-1e072b89a077",
+      "name": "Runtime Permissions",
+      "solved": true
+     },
+     {
+      "id": "0a870083-7ce0-44b8-b18a-7c328946b569",
+      "name": "Библиотеки для разрешений",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "90297604-9ee2-45ec-98b4-0f94d53fda80",
+    "sprint_id": 1090692,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "f1804f4e-70d7-478d-ac48-598a4603aff7",
+      "name": "Практическое задание",
+      "solved": true
+     },
+     {
+      "id": "dba21eda-d5ac-455f-bb3f-8522c181712b",
+      "name": "Итоги спринта",
+      "solved": true
+     },
+     {
+      "id": "b3fa47c0-29bf-4163-b4f1-5b14a29a97e5",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Хранение данных",
+  "id": "57bd6684-5dd6-4397-96d6-252c4e55e5a8",
+  "topics": [
+   {
+    "name": "SharedPreferences",
+    "id": "2a4f0d0a-b261-4009-ace2-dd74db16e436",
+    "sprint_id": 1090694,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "b3cb755b-22c2-4c6c-b9cf-2bbfb2beea1a",
+      "name": "Что такое Shared Preferences?",
+      "solved": true
+     },
+     {
+      "id": "facea167-d40e-46ad-897f-8f9a8af651c5",
+      "name": "Сохраняем данные в Shared Preferences",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Храним данные",
+    "id": "acb5df1b-c16f-4f3e-89b2-3e499b0ec145",
+    "sprint_id": 1090694,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "235bd100-5212-4341-8dab-aa37751a7e47",
+      "name": "Сохранение объектов",
+      "solved": true
+     },
+     {
+      "id": "d36c262a-8fb6-4e55-b655-7b790901622c",
+      "name": "Шаблон Observer",
+      "solved": true
+     },
+     {
+      "id": "177105b0-ad71-462b-8dcb-d7abe1fd7b85",
+      "name": "Подписка на изменения",
+      "solved": true
+     },
+     {
+      "id": "4c6b67d2-888a-4cc7-a20e-cbef6ee3ee22",
+      "name": "Jetpack и DataStore",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Базы данных, SQL",
+    "id": "12748fef-5673-4bd6-8fa0-3ea4ba2854e1",
+    "sprint_id": 1090694,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "04c867ff-53da-421b-95eb-1eb61bb40b59",
+      "name": "Хранение данных",
+      "solved": true
+     },
+     {
+      "id": "bce438ec-8a32-414f-ae84-b765cb80eaab",
+      "name": "Типы баз данных и СУБД",
+      "solved": true
+     },
+     {
+      "id": "54d0f0d9-9365-46dd-9a1c-83a40a299282",
+      "name": "Реляционные базы данных",
+      "solved": true
+     },
+     {
+      "id": "53b6cee0-e85e-4346-9b90-8ab6ed703492",
+      "name": "SQL",
+      "solved": true
+     },
+     {
+      "id": "43e47b7e-bbc5-4b6b-8173-65cf360569d4",
+      "name": "SQLite и Android",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Room",
+    "id": "96a683c3-2caa-49ac-91e8-2ff96e613074",
+    "sprint_id": 1090694,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "accd62b0-ddf9-401a-917b-08eff34dbf98",
+      "name": "Room в стиле румба",
+      "solved": true
+     },
+     {
+      "id": "e376abb8-67db-4aba-913e-621b96c6ad62",
+      "name": "Знакомство с Room",
+      "solved": true
+     },
+     {
+      "id": "89ab5745-8164-437b-a2b4-d52a38d8db98",
+      "name": "Практика с Room",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Проектная работа",
+    "id": "c82fc990-3c0e-4319-84c8-5f33bb6f60b2",
+    "sprint_id": 1090694,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "fc539aaa-4774-49f7-8bea-f755094d7df6",
+      "name": "Практическое задание",
+      "solved": true
+     },
+     {
+      "id": "4c66254d-170e-4e40-af4a-9ac4d5bb2518",
+      "name": "Итоги спринта",
+      "solved": true
+     },
+     {
+      "id": "77f774a5-0809-4c1c-8404-d40c313b4f67",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Доработка проекта и финальное задание",
+  "id": "e4d9e5f9-ea50-438b-960b-aacbe78f9d33",
+  "topics": [
+   {
+    "name": "Доработка Playlist Maker",
+    "id": "afa5a142-b586-4ff4-8de0-7aa7423ce925",
+    "sprint_id": 1090695,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "42c7fcf2-0900-4c9b-acd6-cbb29d18a88b",
+      "name": "Настраиваем добавление в «Избранное»",
+      "solved": true
+     },
+     {
+      "id": "11f1cb90-f80d-462c-a936-180844939262",
+      "name": "Добавление обложки плейлиста",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Финальное задание",
+    "id": "cc443e37-9146-450f-b778-febaf08f5127",
+    "sprint_id": 1090695,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "7c8a801c-1a2a-41d3-8b0b-9b30a94fcce1",
+      "name": "Финальное практическое задание",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Финальное задание: отправка на ревью",
+  "id": "3bc06a9d-bad5-4ff1-b702-3f213fb1bbd8",
+  "topics": [
+   {
+    "name": "Отправка проекта на ревью",
+    "id": "7e634bb6-828d-4ecd-b2f4-f64b79c53d03",
+    "sprint_id": 1090697,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "467fe96d-9e0b-499f-9e39-c80ca0da6505",
+      "name": "Отправка проекта на ревью",
+      "solved": false
+     },
+     {
+      "id": "5e836c4f-1391-44fc-82b4-10b7cd95f60b",
+      "name": "Обратная связь",
+      "solved": false
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Дополнительный модуль. Использование ИИ в разработке",
+  "id": "dfab3693-d927-4d52-bfbd-73784f35f014",
+  "topics": [
+   {
+    "name": "Введение в искусственный интеллект",
+    "id": "699cd279-9675-4daa-ab0d-c9179bc9d861",
+    "sprint_id": 1090700,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "b9eb815d-ff2d-4f41-9cf0-502aa8aea16a",
+      "name": "Эволюция ИИ",
+      "solved": true
+     },
+     {
+      "id": "e1a9c7c6-4dd3-426d-bede-f36195ceeb0e",
+      "name": "Как работают нейросети",
+      "solved": true
+     },
+     {
+      "id": "d6bdb414-d357-44a8-9b7e-9ef322f39f90",
+      "name": "Безопасность и этика",
+      "solved": true
+     },
+     {
+      "id": "a87559d8-79a4-4b13-b3e3-18bc0b03ebce",
+      "name": "Выбор инструментов",
+      "solved": true
+     },
+     {
+      "id": "a661664d-ffd8-4466-b524-d8ce589cede8",
+      "name": "Основы промт-инжиниринга",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "ИИ для обучения и исследований",
+    "id": "8c15172e-1191-4843-8a2c-10a43d17f774",
+    "sprint_id": 1090700,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "0d14b8e3-4d1f-4058-b21a-2fa6f447df13",
+      "name": "Поиск информации и объяснение теории",
+      "solved": true
+     },
+     {
+      "id": "a6b7764b-325e-4ee2-88a9-9356e1b318fc",
+      "name": "Генерация учебных задач для практики",
+      "solved": true
+     },
+     {
+      "id": "8a21fe85-3593-45c5-ab90-4d13d69bb6bb",
+      "name": "Планирование работы по проекту",
+      "solved": true
+     }
+    ]
+   },
+   {
+    "name": "Базовые кейсы в разработке",
+    "id": "9f0d6c39-10c6-4d46-9d16-5f2226f55d31",
+    "sprint_id": 1090700,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "d68bb736-4964-4312-b2f6-578d3e6985b7",
+      "name": "Генерация фрагментов кода",
+      "solved": true
+     },
+     {
+      "id": "e1760c2e-edbb-46aa-b69b-f70167af74e7",
+      "name": "Отладка кода",
+      "solved": true
+     },
+     {
+      "id": "14b4e103-1008-417d-bfc5-2398d80c8a74",
+      "name": "Документирование",
+      "solved": true
+     },
+     {
+      "id": "dc64e89c-c985-42a6-9bef-db27bc03d118",
+      "name": "Генерация тестовых данных и автотестов",
+      "solved": true
+     },
+     {
+      "id": "6c7e6a3e-f77f-4e86-b6bf-c418b44a5bbc",
+      "name": "Обратная связь",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Вебинары с экспертами из Яндекса",
+  "id": "282f6fcf-1775-4f5d-83c6-31c5f518383e",
+  "topics": [
+   {
+    "name": "Вебинары с экспертами из Яндекса",
+    "id": "8211aa3d-d87a-4785-a838-f849fc1c71bc",
+    "sprint_id": 1181086,
+    "solved": false,
+    "lessons": [
+     {
+      "id": "456e8093-1387-4be0-a344-db1e8fe427d2",
+      "name": "Вебинары с экспертами из Яндекса",
+      "solved": true
+     }
+    ]
+   }
+  ]
+ }
+]

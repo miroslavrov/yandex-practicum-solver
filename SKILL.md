@@ -1,0 +1,69 @@
+---
+name: yandex-practicum-solver
+description: Auto-complete the Yandex Practicum "Андроид-разработчик" course (ap-android-st) end-to-end via API: theory lessons, quizzes, Kotlin code tasks (WS jrunner), quiz_coding blocks, the final project repo workflow and the review submission. Use when a user asks to pass/complete this specific Practicum course.
+---
+
+# Yandex Practicum Solver — курс «Андроид-разработчик» (ap-android-st)
+
+Заводит курс https://practicum.yandex.ru/profile/ap-android-st/ до 100%: теория, квизы, кодовые задачи, финальный проект с гит-историей и отправка на ревью.
+
+## Принцип работы
+
+Пользователь делает ОДНО: отвечает на сбор данных в начале. Всё остальное — от нуля до отправленной на ревью ссылки на GitHub PR — агент выполняет сам, без вмешательства пользователя.
+
+## Обязательный сбор данных (спросить ВСЁ сразу, до старта)
+
+Сформулировать пользователю один запрос со всеми пунктами; недостающее запросить через `request_secret`/сообщение:
+
+1. **Cookies** (обязательно): Netscape-файл кук с practicum.yandex.ru из его браузера (расширение «Get cookies.txt»/DevTools → Application → Cookies). Положить в `practicum_cookies.txt` или путь в `PRACTICUM_COOKIES`. **Если не дал** — объяснить, как экспортировать, и ждать: без кук курс не пройти. Альтернатива — логин/пароль для входа в браузере самим агентом.
+2. **GitHub-ключ** (обязательно): PAT с `repo`-scope или git MCP — нужен, чтобы создавать коммиты и PR **от имени пользователя**. Без него агент не может открыть PR без постороннего авторства — настоять.
+3. **Репозиторий проекта**: имя/владелец под проект курса («Playlist Maker») или согласие создать новый (`propose_new_repo`). Видимость уточнить — пользователь этого прогона просил **публичный** (преподаватель без кредитов должен видеть код), хотя урок пишет Private как обязательное — показать пользователю оба варианта, решение за ним.
+4. **Персональные данные**: ФИО как в документах + данные для Яндекс.Документа/Диска (вуз, группа и пр. по формулировке задания) и OAuth-токен Яндекса `cloud_api:disk.*` — см. docs/YANDEX_DOCS.md.
+5. **Авторство**: автор всех коммитов и PR — только пользователь (его GitHub-логин + noreply-email `ID+login@users.noreply.github.com`). Никаких Devin/Cognition/ботов и `Co-Authored-By` в истории — см. раздел про гит-воркфлоу.
+
+## Как курс устроен и что с ним делать
+
+- 15 модулей, 58 тем, ~222 урока. Инвентарь: GET `/api/v2/professions/ap-android-st/` и дерево курсов/топиков/уроков (см. `run_all.py`, `verify.py`).
+- Урок помечается `solved` автоматически, когда выполнены все его обязательные блоки; `POST /api/lessons/<id>/solve/` после этого либо закрывает урок, либо отвечает 403 (уже решён — это ок).
+- `GET /api/subscriptions/<sub_id>/finished_lessons_count/` — итоговый счётчик.
+
+### Массовый прогон (run_all.py)
+
+По каждому уроку: `POST checkin` → обязательные блоки: ActionButton `POST /api/lessons/<lid>/quizzes/` `{user_answer:true, markup:{id:"expander-<content.id>",type:"actionButton"}}`; QuizSelect — тот же POST с `{user_answer:[option_ids], markup:<content>}` (правильные опции видны по `correct:true` в content, но **правильность не нужна** — сервер засчитывает сам факт ответа) → `POST solve` → проверка `solved`.
+
+### Кодовые задачи (WS jrunner)
+
+- Проверка только через WebSocket: `wss://practicum.yandex.ru/ws-proxy/jrunner/task/<task_id>/`, заголовки `Cookie` + `Origin: https://practicum.yandex.ru`.
+- Отправка: `{"type":"CHECK","data":{"files":[{"name":"Main.kt","opened":true,"content":"<code>","language":"kotlin"}]}}` → фреймы STATE/LOG → `RESULT {"status":"ok"|"failed"}`. В LOG — точные подсказки препроцессора («Используйте mapValues()» и т.п.).
+- Задачи внутри урока открываются последовательно: `GET /api/tasks/<id>/` даёт 403, пока не решена предыдущая.
+- **Не параллельить WS-чеки** — сервер душит залп таймаутами; идти последовательно или маленькими батчами с ретраями. Одна проверка занимает 20–60 с.
+
+### quiz_coding (теоретические блоки с кодом)
+
+`POST /api/theory_blocks/quiz_coding/check/` `{block_id, lesson_id, panes}` → `user_answer.test_result.solved`. Часто проходит сабмит стартового кода; для `use_tests:true` чинить по логам (см. qc2.py и FIX-словарь).
+
+## Гит-воркфлоу проекта (требование курса + пользователя)
+
+- Проект («Playlist Maker») вести **спринтами**: ветка `feature/sprint-N` → PR → мёрдж → удалить ветку. Не одним коммитом — история должна выглядеть постепенной разработкой.
+- Финал («Отправка проекта на ревью», external_url_homework): ветка спринта с актуальным кодом + `checklists/sprint-12.md` + заполненный `README.md` (описание Playlist Maker, версии Android Studio/Kotlin/SDK, шаги сборки и запуска) → ветка `review` от базы → **открытый** PR `sprint-12 → review` (не мёрджить до ответа ревьюера) → коллаборатор `interactivetextbook` (Settings → Collaborators — только владелец может добавить) → сдать ссылку на PR: `POST /api/lessons/<lid>/submit_url/` body `{homework: <url>, homework_external_url: <url>}`.
+- После ревью: принять PR, мёрдж `review → main`, `git tag v11.0 && git push --tags`.
+- **Авторство**: все коммиты/PR только от имени пользователя (GitHub-логин + его noreply email). Никаких `Co-Authored-By`, служебных ботов и ссылок на Devin/Cognition в телах коммитов и PR. Если коммит уже улетел с чужим авторством — `git filter-branch --env-filter` по всем веткам + force-push.
+- Урок «Обратная связь» открывается 403, пока не сдано домашнее задание на ревью.
+
+## Банк ответов
+
+- `answers/solutions.json` — готовые ПРИНЯТЫЕ решения всех 17 WS-задач курса (task_id → files[]). Имена/сигнатуры проверяются препроцессором — см. task_details.json для формулировок.
+- `answers/NOTES.md` — таблица задача → решение → точные грабли препроцессора (чтобы принимало с первого сабмита) + общие правила прохождения.
+- `answers/task_details.json` — описания задач и стартовые panes.
+
+## Правила Kotlin-препроцессора (набитые шишки)
+
+- Стартовый pane без `fun main` — script-mode: только top-level код, добавлять `fun main` нельзя.
+- Требуемые конструкции: вложенный `for` и `.add()` для корзины; `forEach` для таблицы умножения; `mapValues()`+`map()` для студентов; `inner` для вложенного ViewHolder; деструктуризация в лямбде/val для HoneyBear; точные имена companion-констант (`coins_10`, `bill_1000`).
+- Кофемашина: ингредиенты стартуют с 0 (не с максимума), команды сравнивать `equals(ignoreCase = true)`, enum.name совпадает с командой, stdin закрывать через `scanner.hasNextLine()`, строки с кавычками — triple-quoted в JSON.
+- Экранирование кавычек в JSON съедает решения — собирать content через json.dumps, не вручную.
+
+## docs/
+
+- `docs/REVIEW_SUBMISSION.md` — чек-лист финальной сдачи и endpoint submit_url.
+- `docs/YANDEX_DOCS.md` — работа с Яндекс.Документами/Диском: что спросить у пользователя (ФИО и пр.) и как грузить по API.
