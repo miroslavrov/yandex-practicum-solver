@@ -36,3 +36,4 @@
 `quiz_coding_solutions.json` — 12 проверенных ответов: block_id → {lesson_id, panes}. Сабмит: `POST /api/theory_blocks/quiz_coding/check/` `{block_id, lesson_id, panes}`.
 - Демо-блоки (`use_tests:false`) принимаются стартовым кодом — в файле он уже сохранён как принятый.
 - Блоки с правкой кода: enum AuthorizationType (тип параметра enum, не String), sealed interface State вместо data class, `inner class ViewHolder`, downloadCat с `onError`, downloadCat с `onSuccess: (Cat) -> Unit` + `onError: (String) -> Unit`, деструктуризация в HoneyBear и в лямбде `CanEat { (name, size, color) -> }`.
+- Если сервер ругается на `pane.id` — перед сабмитом перечитать `GET /api/lessons/<lid>/`, взять `content.panes` блока и подставить свежие `id`/`name`, контент — из этого файла.
