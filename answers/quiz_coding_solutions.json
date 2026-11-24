@@ -1,0 +1,146 @@
+{
+ "470a3b5d-0338-4eb3-b359-27c049d1e996": {
+  "lesson_id": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "panes": [
+   {
+    "id": "1fc8a805-e14e-4d4f-a1b7-0ef863a9bc5f",
+    "name": "Practicum.kt",
+    "content": "fun main(){\n    val fruits = listOf(\"яблоко\", \"банан\", \"апельсин\")\n    \n    println(fruits.sorted()) // по алфавиту по возрастанию\n    println(fruits.sortedDescending())  // по алфавиту по убыванию\n    println(fruits.sortedBy { fruit -> fruit.length }) // по длине строки\n    println(fruits.sortedByDescending { fruit -> fruit.length }) // по длине строки по убыванию\n}\n",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "ca6b31ba-cf53-4751-8b39-8612ca118171": {
+  "lesson_id": "02d2cbfb-57bd-4da9-b8fd-c98068edc6d1",
+  "panes": [
+   {
+    "id": "3301a7d8-051b-461f-b0e4-e2db2b860e56",
+    "name": "Practicum.kt",
+    "content": "fun main(){\n    val fruits = mutableListOf(\"яблоко\", \"банан\", \"апельсин\")\n    \n    fruits.sort()\n    println(fruits)\n    fruits.sortBy { fruit -> fruit.length }\n    println(fruits)\n}\n",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "1baad2a9-e245-40d7-9fe6-3b3a8638085e": {
+  "lesson_id": "32322e57-8457-4daa-9e44-6b96e54e4577",
+  "panes": [
+   {
+    "id": "16386dad-28b7-4674-a07b-19dd4a8b57a4",
+    "name": "Main.kt",
+    "content": "enum class AuthorizationType { LOGIN, PHONE_NUMBER, EMAIL }\n\nfun handleAuthorization(type: AuthorizationType) {\n    when (type) {\n        AuthorizationType.LOGIN -> println(\"login\")\n        AuthorizationType.PHONE_NUMBER -> println(\"phone\")\n        AuthorizationType.EMAIL -> println(\"email\")\n    }\n}\n\nfun main() {\n    handleAuthorization(AuthorizationType.EMAIL)\n    handleAuthorization(AuthorizationType.LOGIN)\n}",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "f00db329-8cb1-48f7-b587-3c740f1dba32": {
+  "lesson_id": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "panes": [
+   {
+    "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+    "name": "Practicum.kt",
+    "content": "import kotlin.random.Random\n\nsealed interface State {\n    data class Data(val content: String) : State\n    data class Error(val error: String) : State\n    object Loading : State\n}\n\nclass UserScreen {\n\n    fun render(state: State) {\n        when (state) {\n            is State.Data -> println(\"Показываем контент: ${state.content}\")\n            is State.Error -> println(\"Показываем ошибку: ${state.error}\")\n            is State.Loading -> println(\"Показываем загрузку\")\n        }\n    }\n}\n\nclass ContentDownloader(private val userScreen: UserScreen) {\n\n    fun downloadContent() {\n        val state = when (Random.nextInt(3)) {\n            0 -> State.Data(\"Кот Борис\")\n            1 -> State.Loading\n            else -> State.Error(\"Похоже, злые бурундуки отключили нам интернет\")\n        }\n\n        userScreen.render(state)\n    }\n}\n\nfun main() {\n    val contentDownloader = ContentDownloader(UserScreen())\n    for (i in 0..10)\n        contentDownloader.downloadContent()\n}",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "982a8601-693e-4fbe-8135-7dfb8c677f7d": {
+  "lesson_id": "9cdf6b51-1490-4e8c-b49a-8d3e0878a999",
+  "panes": [
+   {
+    "id": "f21618e9-1d4d-4ece-a789-24c24dc2e8f0",
+    "name": "Practicum.kt",
+    "content": "import kotlin.random.Random\n\nsealed interface State {\n\n    // помним, что в Kotlin нет ключевых слов extends и implements, вместо них используется двоеточие \":\"\n    data class Data(val content: String) : State\n    data class Error(val error: String) : State\n    object Loading : State\n}\n\nclass UserScreen {\n\n    fun render(state: State) {\n        when (state) {\n            is State.Data -> println(\"Показываем контент: ${state.content}\")\n            is State.Error -> println(\"Показываем ошибку: ${state.error}\")\n            is State.Loading -> println(\"Показываем загрузку\")\n        }\n    }\n}\n\nclass ContentDownloader(private val userScreen: UserScreen) {\n\n    fun downloadContent() {\n        val state = when (Random.nextInt(3)) {\n            0 -> State.Data(\"Кот Борис\")\n            1 -> State.Loading\n            else -> State.Error(\"Похоже, злые бурундуки отключили нам интернет\")\n        }\n\n        userScreen.render(state)\n    }\n}\n\nfun main() {\n    val contentDownloader = ContentDownloader(UserScreen())\n    for (i in 0..10)\n        contentDownloader.downloadContent()\n}",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "42d7262a-c9c0-4f5e-b5bc-491ec94c6c69": {
+  "lesson_id": "11a32d35-005d-4eb0-8ce9-003f99d1e900",
+  "panes": [
+   {
+    "id": "9898ae80-cbc6-48b6-b248-505eb6b87a27",
+    "name": "Practicum.kt",
+    "content": "class RecyclerViewAdapter {\n\n    val dataList = listOf(\"Анна\", \"Василий\")\n    inner class ViewHolder() {\n        fun resendAllData(): List<String> {\n        \treturn dataList\n   \t\t}\n    }\n}",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "f37544db-3275-4d3d-9ec8-9f7ef81703a8": {
+  "lesson_id": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "panes": [
+   {
+    "id": "62932d63-ab91-442f-b8dd-c6aefc1cbdc5",
+    "name": "Practicum.kt",
+    "content": "fun downloadCat(\n    onSuccess: () -> Unit,\n    onError: () -> Unit\n) {\n    // загружает фотографии котиков из интернета\n}\n\nfun main(){}",
+    "language": "java"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "e1d20e86-97a9-41b1-9cf5-14879a1c5fb1": {
+  "lesson_id": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "panes": [
+   {
+    "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+    "name": "Practicum.kt",
+    "content": "fun downloadCat(\n    onSuccess: (Cat) -> Unit, \n    onError: (String) -> Unit\n) {\n    // загружает фотографии котиков из интернета\n}",
+    "language": "java"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "2295ff7f-a580-425b-980f-e6016491e4a1": {
+  "lesson_id": "d6b9535d-9b58-49cd-8626-7637a6ae9b93",
+  "panes": [
+   {
+    "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+    "name": "Practicum.kt",
+    "content": "import kotlin.random.Random\n\nfun main() {\n    val catDownloader = CatDownloader()\n    catDownloader.downloadCat(\n        onSuccess = { cat -> println(\"Кот ${cat.name} загружен успешно\") },\n        onError = { error -> println(error) }\n    )\n}\n\nclass CatDownloader {\n\n    // передаем в аргументы 2 функции onSuccess и onError\n    fun downloadCat(\n        onSuccess: (Cat) -> Unit,\n        onError: (String) -> Unit\n    ) {\n        val cat: Cat? = getCatFromInternet()\n\n        if (cat != null) {\n            onSuccess.invoke(cat)\n        } else {\n            onError(\"Упс, что-то пошло не так при загрузке котеек.\")\n        }\n\n    }\n\n    private fun getCatFromInternet(): Cat? {\n        return if (Random.nextBoolean()) Cat(\"Борис\") else null\n    }\n}\n\nclass Cat(val name: String)",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "f9b27987-c15c-4afc-850f-da8e305b82a6": {
+  "lesson_id": "a728b79f-386a-4206-93de-0d1714596077",
+  "panes": [
+   {
+    "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+    "name": "Practicum.kt",
+    "content": "data class Person(val name: String, val age: Int)\n  \nfun main() {\n    val personsMap: HashMap<Int, Person> = HashMap()\n    personsMap.put(1, Person(\"Коля\", 12))\n    personsMap.put(2, Person(\"Алёна\", 17))\n    personsMap.put(3, Person(\"Настя\", 11))\n\n    for ((key, value) in personsMap){\n        println(\"key = $key, value = $value\")\n    }\n}",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "2ad35dfd-dcf2-467b-b86a-3039fd8e22c1": {
+  "lesson_id": "a728b79f-386a-4206-93de-0d1714596077",
+  "panes": [
+   {
+    "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+    "name": "Practicum.kt",
+    "content": "data class HoneyBear(\n    val name: String,\n    val size: Int,\n    val color: String,\n)\n\nfun interface CanEat {\n    fun eat(honeyBear: HoneyBear)\n}\n\nfun main() {\n    val (name, size, color) = HoneyBear(\"Задира\", 5, \"Чёрный\")\n    val canEatLambda = CanEat { (name, size, color) ->\n        println(\"Медоед $name имеет размер $size и цвет $color\")\n    }\n\n    println(\"Медоед $name имеет размер $size и цвет $color\")\n    canEatLambda.eat(HoneyBear(\"Злюка\", 12, \"Рыжий\"))\n}",
+    "language": "java"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ },
+ "422cd88f-21cb-4e3f-be40-94b4c8ad5c43": {
+  "lesson_id": "a728b79f-386a-4206-93de-0d1714596077",
+  "panes": [
+   {
+    "id": "2198beb4-72af-4edc-9b3f-ca648542a290",
+    "name": "Practicum.kt",
+    "content": "class Person(val name: String, val age: Int) {\n\n    // перегружаем функцию plus(). \n    operator fun plus(person: Person): Int { // возвращаемый тип здесь может быть любой\n        return person.age + age\n    }\n}\n\nfun main() {\n    val kolya = Person(\"Коля\", 12)\n    val dasha = Person(\"Даша\", 16)\n\n    println(kolya + dasha)\n}",
+    "language": "kotlin"
+   }
+  ],
+  "note": "verified accepted 2026-11-25"
+ }
+}

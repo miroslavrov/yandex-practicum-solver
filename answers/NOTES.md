@@ -30,3 +30,9 @@
 - Если pane пришёл без `fun main` — не добавлять его: тренажёр ждёт top-level скрипт.
 - JSON собирать через `json.dumps` — ручное экранирование кавычек съедает код.
 - Задачи «открываются» позже (403 на GET /api/tasks/<id>/) — решать после разблокировки, не переделывать.
+
+## quiz_coding (теоретические блоки с кодом)
+
+`quiz_coding_solutions.json` — 12 проверенных ответов: block_id → {lesson_id, panes}. Сабмит: `POST /api/theory_blocks/quiz_coding/check/` `{block_id, lesson_id, panes}`.
+- Демо-блоки (`use_tests:false`) принимаются стартовым кодом — в файле он уже сохранён как принятый.
+- Блоки с правкой кода: enum AuthorizationType (тип параметра enum, не String), sealed interface State вместо data class, `inner class ViewHolder`, downloadCat с `onError`, downloadCat с `onSuccess: (Cat) -> Unit` + `onError: (String) -> Unit`, деструктуризация в HoneyBear и в лямбде `CanEat { (name, size, color) -> }`.

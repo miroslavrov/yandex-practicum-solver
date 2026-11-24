@@ -41,7 +41,7 @@ description: Auto-complete the Yandex Practicum "Андроид-разработ
 
 ### quiz_coding (теоретические блоки с кодом)
 
-`POST /api/theory_blocks/quiz_coding/check/` `{block_id, lesson_id, panes}` → `user_answer.test_result.solved`. Часто проходит сабмит стартового кода; для `use_tests:true` чинить по логам (см. qc2.py и FIX-словарь).
+`POST /api/theory_blocks/quiz_coding/check/` `{block_id, lesson_id, panes}` → `user_answer.test_result.solved`. Готовые ПРИНЯТЫЕ ответы всех 12 блоков — `answers/quiz_coding_solutions.json` (block_id → lesson_id + panes; подставить и отправить). Часто проходит сабмит стартового кода; для `use_tests:true` чинить по логам (см. qc2.py и FIX-словарь).
 
 ## Проект «Playlist Maker» — пошагово от нуля (для агента)
 
